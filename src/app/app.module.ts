@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ResultDataComponent } from './result-data/result-data.component';
+import {RouterModule} from '@angular/router';
+import { QuestionsComponent } from './admin/questions/questions.component';
+import {AdminAuthGuardService} from './admin-auth-guard.service';
+import { QuestionSetComponent } from './admin/question-set/question-set.component';
 
 @NgModule({
   declarations: [
@@ -12,9 +16,35 @@ import { ResultDataComponent } from './result-data/result-data.component';
     LoginComponent,
     HomeComponent,
     ResultDataComponent,
+    QuestionsComponent,
+    QuestionSetComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: 'login',
+        component: LoginComponent
+      },
+      {
+        path: 'home',
+        component: HomeComponent
+      },
+      {
+        path: 'result-data',
+        component: ResultDataComponent
+      },
+      {
+        path: 'admin/questions',
+        component: QuestionsComponent,
+        canActivate: [AdminAuthGuardService]
+      },
+      {
+        path: 'admin/questions-set',
+        component: QuestionSetComponent,
+        canActivate: [AdminAuthGuardService]
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

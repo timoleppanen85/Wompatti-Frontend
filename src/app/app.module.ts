@@ -9,6 +9,7 @@ import {RouterModule} from '@angular/router';
 import { QuestionsComponent } from './admin/questions/questions.component';
 import {AdminAuthGuardService} from './admin-auth-guard.service';
 import { QuestionSetComponent } from './admin/question-set/question-set.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { QuestionSetComponent } from './admin/question-set/question-set.componen
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     RouterModule.forRoot([
       {
         path: 'login',

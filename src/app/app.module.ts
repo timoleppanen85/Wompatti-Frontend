@@ -10,6 +10,7 @@ import { QuestionsComponent } from './admin/questions/questions.component';
 import {AdminAuthGuardService} from './admin-auth-guard.service';
 import { QuestionSetComponent } from './admin/question-set/question-set.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NavbarComponent } from './navbar/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     ResultDataComponent,
     QuestionsComponent,
     QuestionSetComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

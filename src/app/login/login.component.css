@@ -1,0 +1,28 @@
+h1 {
+  font-family: Microsoft Sans Serif;
+  font-size: 150px;
+  color: #060E9F;
+}
+h2 {
+  font-family: Microsoft Sans Serif;
+  font-size: 30px;
+  color: #060E9F;
+}
+
+#loginWithOutUserId {
+  font-family: Microsoft Sans Serif;
+
+}
+
+#loginWithUserId {
+  font-family: Microsoft Sans Serif;
+
+}
+#greenBlock {
+  background: #00A887;
+  width: 300px;
+  height: 900px;
+  float: right;
+  opacity: 100%;
+
+}

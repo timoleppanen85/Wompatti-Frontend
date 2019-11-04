@@ -9,8 +9,9 @@ import {RouterModule} from '@angular/router';
 import { QuestionsComponent } from './admin/questions/questions.component';
 import {AdminAuthGuardService} from './admin-auth-guard.service';
 import { QuestionSetComponent } from './admin/question-set/question-set.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule, MatFormFieldModule, MatIconModule, MatMenuModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,6 @@ import { NavbarComponent } from './navbar/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule,
     RouterModule.forRoot([
       {
         path: 'login',
@@ -48,7 +48,11 @@ import { NavbarComponent } from './navbar/navbar/navbar.component';
         component: QuestionSetComponent,
         canActivate: [AdminAuthGuardService]
       }
-    ])
+    ]),
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

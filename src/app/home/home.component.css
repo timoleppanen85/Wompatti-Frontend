@@ -1,10 +1,10 @@
 h1 {
-  position: relative;
   font-family: Microsoft Sans Serif, sans-serif;
   font-size: 150px;
   color: #060E9F;
   padding-left: 300px;
   display: inline;
+  width: 50%;
 }
 
 p {
@@ -36,6 +36,7 @@ p {
 #loginWithOutUserId {
   position: relative;
   font-family: Microsoft Sans Serif, sans-serif;
+  font-size: 10px;
   padding-left: 550px;
   padding-top: 5px;
 }
@@ -43,15 +44,16 @@ p {
 #loginWithUserId {
   position: relative;
   font-family: Microsoft Sans Serif, sans-serif;
+  font-size: 20px;
   padding-left: 550px;
   padding-top: 125px;
 }
 
 #greenBlock {
   background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 168, 135, 1) 75%);
-  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 168, 135, 1) 75%);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 168, 135, 1) 75%);
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#00A887", GradientType=1);
 }
 
@@ -59,6 +61,7 @@ p {
   position: relative;
   box-sizing: border-box;
   padding-left: 20px;
+  width: 100%;
 }
 
 .row {

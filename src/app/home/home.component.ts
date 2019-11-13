@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+import {LoginComponent} from '../login/login.component';
+import {QuestionSetsComponent} from '../question-sets/question-sets.component';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  loginAdmin() {
+    this.router.navigate(['/login']).then(r => LoginComponent);
+  }
+
+  anonymousUser() {
+    this.router.navigate(['/question-sets']).then(r => QuestionSetsComponent);
+  }
 }

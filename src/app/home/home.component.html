@@ -1,31 +1,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div id="greenBlock" class="bg-right">
+<div id="greenBlock">
   <h1>WOMPATTI</h1>
   <p>VOIMAVARANI</p>
 
-  <nav>
-    <a routerLink="/login" routerLinkActive="active">Kirjaudu sisään</a>
-    <a routerLink="/question-sets" routerLinkActive="active">Aloita kirjautumatta</a>
-  </nav>
 
+<nav>
   <div id="loginWithUserId" class="mat-button">
-    <a routerLink="login">
       <button (click)="loginAdmin()"
               id="loginWithUserIdButton"
               style="height: 50px;width: 300px">
         Kirjaudu sisään
       </button>
-    </a>
   </div>
   <div id="loginWithOutUserId" class="mat-button">
-    <a routerLink="question-sets">
       <button (click)="anonymousUser()"
               id="loginWithOutUserIdButton"
               style="height: 50px;width: 300px">
         Aloita kirjautumatta
       </button>
-    </a>
   </div>
+</nav>
 
 
   <div class="row" id="partnerLogos">

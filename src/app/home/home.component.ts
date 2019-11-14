@@ -16,10 +16,10 @@ export class HomeComponent implements OnInit {
   }
 
   loginAdmin() {
-    this.router.navigate(['/login']).then(r => LoginComponent);
+    this.router.navigate(['/login']);
   }
 
   anonymousUser() {
-    this.router.navigate(['/question-sets']).then(r => QuestionSetsComponent);
+    this.router.navigate(['/question-sets']);
   }
 }

@@ -12,8 +12,6 @@ import {AppRoutingModule, routingComponents} from './app-routing-module';
 import { QuestionSetsComponent } from './question-sets/question-sets.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +30,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MatIconModule,
     MatButtonModule,
     MatFormFieldModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

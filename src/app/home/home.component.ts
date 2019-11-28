@@ -20,6 +20,6 @@ export class HomeComponent implements OnInit {
   }
 
   anonymousUser() {
-    this.router.navigate(['/question-sets']);
+    this.router.navigate(['/menu']);
   }
 }

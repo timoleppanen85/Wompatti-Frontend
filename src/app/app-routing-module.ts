@@ -8,6 +8,7 @@ import {AdminAuthGuardService} from './admin-auth-guard.service';
 import {QuestionSetComponent} from './admin/question-set/question-set.component';
 import {QuestionSetsComponent} from './question-sets/question-sets.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {MenuComponent} from './menu/menu.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
     path: 'admin/questions-set',
     component: QuestionSetComponent,
     canActivate: [AdminAuthGuardService]
+  },
+  {
+    path: 'menu',
+    component: MenuComponent,
   },
   {
     path: '**',

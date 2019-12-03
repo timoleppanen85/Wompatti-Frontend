@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import {LoginComponent} from '../login/login.component';
-import {QuestionSetsComponent} from '../question-sets/question-sets.component';
+
 
 @Component({
   selector: 'app-home',

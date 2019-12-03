@@ -6,10 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ResultDataComponent } from './result-data/result-data.component';
 import { QuestionsComponent } from './admin/questions/questions.component';
-import { QuestionSetComponent } from './admin/question-set/question-set.component';
 import {MatButtonModule, MatFormFieldModule, MatIconModule, MatMenuModule} from '@angular/material';
 import {AppRoutingModule, routingComponents} from './app-routing-module';
-import { QuestionSetsComponent } from './question-sets/question-sets.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MenuComponent } from './menu/menu.component';
 import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
@@ -23,8 +21,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     ResultDataComponent,
     QuestionsComponent,
-    QuestionSetComponent,
-    QuestionSetsComponent,
     PageNotFoundComponent,
     routingComponents,
     MenuComponent,

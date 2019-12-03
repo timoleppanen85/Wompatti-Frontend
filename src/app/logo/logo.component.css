@@ -4,16 +4,17 @@
   padding-left: 15px;
 }
 
-#logoMainText {
+h1 {
   font-family: Microsoft Sans Serif, sans-serif;
+  font-size: 3vw;
   color: #060E9F;
   display: inline;
-  font-size: 40pt;
+  position: relative;
 }
 
-p {
-  position: relative;
+h5 {
   font-family: Microsoft Sans Serif, sans-serif;
   color: #060E9F;
-  text-align: right;
+  padding-left: 65%;
+  display: inline;
 }

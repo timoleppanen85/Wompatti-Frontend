@@ -1,6 +1,6 @@
 h1 {
   font-family: Microsoft Sans Serif, sans-serif;
-  font-size: 9vw;
+  font-size: 8vw;
   color: #060E9F;
   display: inline;
   position: relative;
@@ -10,9 +10,9 @@ h1 {
 
 h6 {
   font-family: Microsoft Sans Serif, sans-serif;
-  font-size: 2vw;
+  font-size: 1.8vw;
   color: #060E9F;
-  padding-left: 45%;
+  padding-left: 42%;
   position: sticky; right: 0; bottom: 0;
   display: inline;
 }

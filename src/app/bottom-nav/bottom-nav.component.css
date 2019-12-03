@@ -1,0 +1,30 @@
+#bottomNavBox {
+  width: 100%;
+  height: 100px;
+  background-color: #00A887;
+  position:absolute;
+  bottom:0;
+}
+
+#imageAttribution {
+  padding-left: 15px;
+}
+
+#navItemTable {
+  width: 100%;
+  padding-top: 25px;
+}
+
+#backToMenu {
+  text-align: right;
+}
+
+td {
+  width: 25%;
+  height: 50px;
+  vertical-align: middle;
+}
+
+button {
+  background-color: white;
+}

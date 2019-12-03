@@ -1,0 +1,19 @@
+#logoContainer {
+  position: absolute;
+  padding-top: 25px;
+  padding-left: 15px;
+}
+
+#logoMainText {
+  font-family: Microsoft Sans Serif, sans-serif;
+  color: #060E9F;
+  display: inline;
+  font-size: 40pt;
+}
+
+p {
+  position: relative;
+  font-family: Microsoft Sans Serif, sans-serif;
+  color: #060E9F;
+  text-align: right;
+}

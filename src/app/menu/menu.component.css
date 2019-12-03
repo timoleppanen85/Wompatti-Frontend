@@ -1,0 +1,26 @@
+
+td {
+  width: 20vw;
+  height: 20vh;
+}
+
+#menuTableDiv {
+   text-align: center;
+}
+
+#menuMiddleImage {
+  height: 100%;
+}
+
+#test {
+  position: absolute;
+  top: 9%;
+  left: 8.5%;
+  background: none;
+  border-radius: 100%;
+  border: 3px solid #00A887;
+  height: 65%;
+  width: 83%;
+  margin: 0;
+  z-index: -1;
+}

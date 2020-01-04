@@ -1,3 +1,8 @@
+body {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 h1 {
   font-family: Microsoft Sans Serif, sans-serif;
   font-size: 8vw;
@@ -29,7 +34,6 @@ h6 {
 }
 
 #anonymousUserDiv {
-
   font-family: Microsoft Sans Serif, sans-serif;
   font-size: 10px;
   position: absolute;
@@ -40,7 +44,7 @@ h6 {
 
 }
 
-#greenBlock {
+body {
   background: rgb(255, 255, 255);
   background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);
   background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);

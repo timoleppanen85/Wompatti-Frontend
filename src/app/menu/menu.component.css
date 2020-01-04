@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
 
 td {
   width: 20vw;

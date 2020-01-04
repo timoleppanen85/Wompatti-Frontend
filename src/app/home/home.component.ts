@@ -14,10 +14,6 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  loginAdmin() {
-    this.router.navigate(['/login']);
-  }
-
   anonymousUser() {
     this.router.navigate(['/menu']);
   }

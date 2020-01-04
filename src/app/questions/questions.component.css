@@ -1,0 +1,66 @@
+* {
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#hintDiv {
+  margin-left: 90%;
+}
+
+#hint {
+  margin-top: 30px;
+  border: 2px solid #00A887;
+  background: white;
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  font-size: 2vh;
+  color: #060E9F;
+}
+
+#nextDiv {
+  margin-left: 90%;
+}
+
+#next {
+  position: relative;
+  margin-top: 250%;
+  border: 2px solid #00A887;
+  background: white;
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  font-size: 2vh;
+  color: #060E9F;
+  bottom: 20%;
+}
+
+.mat-progress-bar {
+  width: 300px;
+  margin: 60px auto;
+  color: #00A887;
+}
+
+.mat-progress-bar li {
+  margin: 20px 0;
+}
+
+.bar {
+  background: #00A887;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0,0,0,3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #060E9F;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background: #060E9F;
+}

@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ResultDataComponent } from './result-data/result-data.component';
-import { QuestionsComponent } from './admin/questions/questions.component';
-import {MatButtonModule, MatFormFieldModule, MatIconModule, MatMenuModule} from '@angular/material';
+import { QuestionsComponent } from './questions/questions.component';
+import {MatButtonModule, MatFormFieldModule, MatIconModule, MatMenuModule, MatProgressBarModule} from '@angular/material';
 import {AppRoutingModule, routingComponents} from './app-routing-module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MenuComponent } from './menu/menu.component';
@@ -35,6 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

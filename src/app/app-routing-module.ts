@@ -3,7 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {LoginComponent} from './login/login.component';
 import {HomeComponent} from './home/home.component';
 import {ResultDataComponent} from './result-data/result-data.component';
-import {QuestionsComponent} from './admin/questions/questions.component';
+import {QuestionsComponent} from './questions/questions.component';
 import {AdminAuthGuardService} from './admin-auth-guard.service';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {MenuComponent} from './menu/menu.component';
@@ -22,15 +22,13 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent
   },
-
+  {
+    path: 'questions',
+    component: QuestionsComponent,
+  },
   {
     path: 'result-data',
     component: ResultDataComponent
-  },
-  {
-    path: 'admin/questions',
-    component: QuestionsComponent,
-    canActivate: [AdminAuthGuardService]
   },
   {
     path: 'menu',

@@ -1,7 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
-import data from '../assets/workquestions.json';
 
 
 
@@ -11,8 +10,6 @@ import data from '../assets/workquestions.json';
   styleUrls: ['./questions.component.css']
 })
 export class QuestionsComponent implements OnInit {
-
-  questions: any = data;
 
   constructor(public dialog: MatDialog) {
   }

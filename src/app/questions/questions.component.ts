@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material';
+import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
+import data from '../assets/workquestions.json';
+
+
 
 @Component({
   selector: 'app-questions',
@@ -7,8 +12,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionsComponent implements OnInit {
 
-  constructor() { }
+  questions: any = data;
 
-  ngOnInit() {
+  constructor(public dialog: MatDialog) {
+  }
+
+  openHint(): void {
+    const dialogRef = this.dialog.open(HintDialogComponent, {
+      position: {top: '50px', right: '100px'}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  ngOnInit(): void {
   }
 }
+

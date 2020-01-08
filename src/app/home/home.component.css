@@ -1,7 +1,13 @@
 body {
   overflow: hidden;
   margin: 0 auto;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#00A887", GradientType=1);
 }
+
 
 h1 {
   font-family: Microsoft Sans Serif, sans-serif;
@@ -9,7 +15,7 @@ h1 {
   color: #060E9F;
   display: inline;
   position: relative;
-  padding-left: 12.5%;
+  left: 12.5%;
 
 }
 
@@ -17,8 +23,10 @@ h6 {
   font-family: Microsoft Sans Serif, sans-serif;
   font-size: 1.8vw;
   color: #060E9F;
-  padding-left: 42%;
-  position: sticky; right: 0; bottom: 0;
+  left: 42.5%;
+  position: sticky;
+  right: 0;
+  bottom: 0;
   display: inline;
 }
 
@@ -38,28 +46,22 @@ h6 {
   font-size: 10px;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 38.5%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 
 }
 
-body {
-  background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);
-  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(0, 168, 135, 1) 80%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#00A887", GradientType=1);
-}
 
 #partnerLogos {
   position: fixed;
   bottom: 0;
+  left: 8.5%;
   padding-bottom: 20px;
 }
-
 
 * {
   box-sizing: border-box;
   padding-left: 20px;
+  padding-right: 20px;
 }

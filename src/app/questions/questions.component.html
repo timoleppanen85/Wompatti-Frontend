@@ -1,17 +1,27 @@
 <body>
 <app-logo></app-logo>
+
+<p id="questionSetHeader">Työ:</p>
+
+<table>
+    <td id="picture"></td>
+    <td id="question"></td>
+    <td id="answer"></td>
+    <td id="empty"></td>
+</table>
+
 <div id="hintDiv">
-  <button id="hint">Ohje</button>
+  <button id="hint" (click)="openHint()">Ohje</button>
 </div>
-<div class="mat-progress-bar">
-<li>
-  <span class="bar"></span>
-</li>
-</div>
+
+<mat-progress-bar mode="determinate"></mat-progress-bar>
+
 <div id="nextDiv">
   <button id="next">Seuraava</button>
 </div>
+
 <app-bottom-nav></app-bottom-nav>
+
 </body>
 
 

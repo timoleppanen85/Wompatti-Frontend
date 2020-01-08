@@ -3,6 +3,13 @@ body {
   overflow: hidden;
 }
 
+img {
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 160px;
+  height: 160px;
+}
+
 td {
   width: 20vw;
   height: 20vh;

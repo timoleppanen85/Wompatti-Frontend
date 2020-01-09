@@ -1,13 +1,15 @@
 <body>
 <app-logo></app-logo>
-
-<p id="questionSetHeader">Työ:</p>
-
+<div>
+  <ul *ngFor="let item of questionSetHeaders">
+    <li id="questionSetHeader">{{item.subject1}}</li>
+  </ul>
+</div>
 <table>
-    <td id="picture"></td>
-    <td id="question"></td>
-    <td id="answer"></td>
-    <td id="empty"></td>
+  <td id="picture"></td>
+  <td id="question"></td>
+  <td id="answer"></td>
+  <td id="empty"></td>
 </table>
 
 <div id="hintDiv">
@@ -17,7 +19,7 @@
 <mat-progress-bar mode="determinate"></mat-progress-bar>
 
 <div id="nextDiv">
-  <button id="next">Seuraava</button>
+  <button id="next" (click)="nextQuestion()">Seuraava</button>
 </div>
 
 <app-bottom-nav></app-bottom-nav>

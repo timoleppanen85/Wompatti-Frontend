@@ -11,7 +11,7 @@ import * as data from '../../data.json';
 })
 export class QuestionsComponent implements OnInit {
 
-  public questionSetHeaders: {subject1: string}[] = data;
+  questionSetHeaders: {subject: any}[] = data;
 
   constructor(public dialog: MatDialog) {
   }

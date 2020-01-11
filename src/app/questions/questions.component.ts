@@ -12,6 +12,7 @@ import {getLocaleDayNames} from '@angular/common';
 })
 export class QuestionsComponent implements OnInit {
 
+  question: any = data[0].perheJaLäheiset1.question;
 
   constructor(public dialog: MatDialog, private router: Router) {
   }

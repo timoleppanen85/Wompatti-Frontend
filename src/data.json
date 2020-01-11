@@ -1,6 +1,6 @@
 [
   {
-    "subject": "Perhe ja läheiset",
+    "subject1": "Perhe ja läheiset",
     "perheJaLäheiset1": {
       "question": "Vastaa, jos sinulla on vanhemmat:\nMiten tulet toimeen\nvanhempiesi kanssa?",
       "answer": [
@@ -73,7 +73,7 @@
     }
   },
   {
-    "subject": "Liikkuminen ja vapaa-aika",
+    "subject2": "Liikkuminen ja vapaa-aika",
     "liikkuminenJaVapaa-aika1": {
       "question": "Pääsetkö liikkumaan kaikkiin\npaikkoihin minne haluat?",
       "answer": [
@@ -106,7 +106,7 @@
     }
   },
   {
-    "subject": "Oma terveys",
+    "subject3": "Oma terveys",
     "omaTerveys1": {
       "question": "Mitä ajattelet terveydestäsi?",
       "answer": [
@@ -219,7 +219,7 @@
     }
   },
   {
-    "subject": "Elämäni tärkeät asiat",
+    "subject4": "Elämäni tärkeät asiat",
     "elämäniTärkeätAsiat1": {
       "question": "Mitä ajattelet\ntulevaisuudestasi?",
       "answer": [
@@ -252,7 +252,7 @@
     }
   },
   {
-    "subject": "Asuminen ja ympäristö",
+    "subject5": "Asuminen ja ympäristö",
     "asuminenJaYmpäristö1": {
       "question": "Oletko tyytyväinen kotiisi?",
       "answer": [
@@ -295,7 +295,7 @@
     }
   },
   {
-    "subject": "Aistit",
+    "subject6": "Aistit",
     "aistit1": {
       "question": "KUULO\n\nMillainen kuulo sinulla on?",
       "answer": [
@@ -388,7 +388,7 @@
     }
   },
   {
-    "subject": "Arjen askareet",
+    "subject7": "Arjen askareet",
     "arjenAskareet1": {
       "question": "Miten selviät kotitöistä?\n(siivous, tiskaus, pyykinpesu)",
       "answer": [
@@ -441,7 +441,7 @@
     }
   },
   {
-    "subject": "Työ",
+    "subject8": "Työ",
     "työ1": {
       "question": "Mitä mieltä olet\ntyö-, työtoiminta- tai\npäivätoimintapaikastasi?",
       "answer": [
@@ -484,7 +484,7 @@
     }
   },
   {
-    "subject": "Huolet ja murheet",
+    "subject9": "Huolet ja murheet",
     "huoletJaMurheet1": {
       "question": "Onko sinulla huolia\nja murheita?",
       "answer": [
@@ -547,7 +547,7 @@
     }
   },
   {
-    "subject": {
+    "subject10": {
       "raha1": {
         "question": "Miten rahasi riittävät?",
         "answer": [

@@ -1,8 +1,9 @@
-/* tslint:disable:no-trailing-whitespace */
-import {Component, Inject, OnInit} from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material';
+import {Component, OnInit} from '@angular/core';
+import { MatDialog } from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
 import * as data from '../../data.json';
+import {Router} from '@angular/router';
+import {getLocaleDayNames} from '@angular/common';
 
 @Component({
   selector: 'app-questions',
@@ -11,9 +12,12 @@ import * as data from '../../data.json';
 })
 export class QuestionsComponent implements OnInit {
 
-  questionSetHeaders: {subject: any}[] = data;
 
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog, private router: Router) {
+  }
+
+  ngOnInit() {
+    console.log(data);
   }
 
   openHint(): void {
@@ -27,11 +31,7 @@ export class QuestionsComponent implements OnInit {
   }
 
   nextQuestion() {
-
-  }
-
-  ngOnInit() {
-    console.log(data);
+    // TODO for statement iterating through questions and saving results.
+    this.router.navigate(['/result-data']);
   }
 }
-

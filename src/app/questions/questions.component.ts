@@ -1,9 +1,9 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {MatDialog} from '@angular/material';
+import {Component, OnInit} from '@angular/core';
+import { MatDialog } from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
 import * as data from '../../data.json';
 import {Router} from '@angular/router';
-import {MenuComponent} from '../menu/menu.component';
+import {getLocaleDayNames} from '@angular/common';
 
 @Component({
   selector: 'app-questions',
@@ -12,14 +12,9 @@ import {MenuComponent} from '../menu/menu.component';
 })
 export class QuestionsComponent implements OnInit {
 
-  @Input() public resultSubject: string;
-  questionSetHeader: any[] = data;
-  questiones: any[] = data;
-
-  questionHeader: any = data[0].subject1;
   question: any = data[0].perheJaLäheiset1.question;
 
-  constructor(public dialog: MatDialog, private router: Router, private menuComponent: MenuComponent) {
+  constructor(public dialog: MatDialog, private router: Router) {
   }
 
   ngOnInit() {
@@ -39,11 +34,5 @@ export class QuestionsComponent implements OnInit {
   nextQuestion() {
     // TODO for statement iterating through questions and saving results.
     this.router.navigate(['/result-data']);
-  }
-
-  showHeader() {
-    if (this.resultSubject === this.questionHeader) {
-      this.questionHeader = data[0].subject1;
-    }
   }
 }

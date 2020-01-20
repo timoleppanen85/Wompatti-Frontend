@@ -1,62 +1,478 @@
-{
-  "id": 1,
-  "subject": "Perhe ja läheiset",
-  "questions": [
-    {
-      "question": "Vastaa, jos sinulla on vanhemmat:\nMiten tulet toimeen\nvanhempiesi kanssa?",
-      "options": [
-        "Tulen tosi hyvin toimeen vanhempieni kanssa.",
-        "Meillä on ihan ok välit.",
-        "Tulen huonosti toimeen\nvanhempieni kanssa."
-      ]
-    },
-    {
-      "question": "Vastaan, jos sinulla on sisaruksia:\nMiten tulet toimeen\nsisarustesi kanssa?",
-      "options": [
-        "Tulen tosi hyvin toimeen\\nsisarusteni kanssa.",
-        "Meillä on ihan ok välit.",
-        "Tulen huonosti toimeen\nsisarusteni kanssa."
-      ]
-    },
-    {
-      "question": "Vastaa, jos sinulla on kumppani:\nOletko tyytynäinen\nparisuhteeseesi?",
-      "options": [
-        "Olen tosi tyytyäinen\nparisuhteeseeni.",
-        "Parisuhteeni on ihan ok.",
-        "En ole tyytyväinen parisuhteeseeni."
-      ]
-    },
-    {
-      "question": "Onko sinulla elämässäsi\nmuita tärkeitä ihmisiä?",
-      "options": [
-        "Kyllä,heitä on monta.",
-        "On ainakin yksi.",
-        "Ei ole."
-      ]
-    },
-    {
-      "question": "Tunnetko itsesi yksinäiseksi?",
-      "options": [
-        "En  tunne itseäni yksinäiseksi.",
-        "Tunnen joskus itseni yksinäiseksi.",
-        "Tunnen usein itseni yksinäiseksi."
-      ]
-    },
-    {
-      "question": "Onko läheisissä\nihmissuhteissasi\nväkivaltaa tai sen uhkaa?",
-      "options": [
-        "Ei ole.",
-        "Ei ole enää nykyään.",
-        "Kyllä on."
-      ]
-    },
-    {
-      "question": "Onko sinulla lemmikkieläin?",
-      "options": [
-        "Kyllä on, ja se on minulle tärkeä.",
-        "Ei ole, enkä haluakaan.",
-        "Ei ole, mutta haluaisin.\nTAI\nOn,mutta siitä on minulle harmia"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "subject": "Aistit",
+    "questions": [
+      {
+        "question": "KUULO\n\nMillainen kuulo sinulla on?",
+        "options": [
+          "Minulla on hyvä kuulo.",
+          "Kuuloni on ihan ok.",
+          "Minulla on huono kuulo."
+        ]
+      },
+      {
+        "question": "ÄÄNIYLIHERKKYYS\n\nMiltä tavalliset elämän äänet\nsinusta kuulostavat?\n\n(esimerkiksi\npuhelimen soittoääni,\nkodinkoneiden äänet\ntai ilmastoinnin äänet)",
+        "options": [
+          "Ne ovat ihan ok.",
+          "Jotkut äänet haittaavat minua,\nmutta olen oppinut selviytymään\nniiden kanssa.",
+          "Minulla on tosi herkkä kuulo\nja monet äänet haittaavat\nminua paljon."
+        ]
+      },
+      {
+        "question": "NÄKÖ\n\nMillainen näkö sinulla on?",
+        "options": [
+          "Minulla on hyvä näkö.",
+          "Näköni on ihan ok.",
+          "Minulla on huono näkö."
+        ]
+      },
+      {
+        "question": "VALOHERKKYYS\n\nHäiritsevätkö jotkut valot sinua?\n\n(esimerkiksi\nauringonvalo,\nloisteputkien valo\ntai välkkyvät valot",
+        "options": [
+          "Ei, valot eivät häiritse minua.",
+          "Joskus ne häiritsevät.",
+          "Kyllä. Minun on vaikeaa\nolla paikoissa,\njoissa on kirjasta tai välkkyvää valoa."
+        ]
+      },
+      {
+        "question": "TUNTOAISTIN YLI-\nTAI ALIHERKKYYS\n\nMillainen tuntoaisti sinulla on?",
+        "options": [
+          "Tuntoaistini on\nihan tavallinen.",
+          "Minulla on aika herkkä tuntoaisti,\nmutta pärjään sen kanssa.\nTAI\nTuntoaistini on vähän huono,\nmutta pärjään sen kanssa.",
+          "Tuntoaistini on liiankin herkkä.\nTAI\nTuntoaistini on huono.\nSaatan kolhaista itseäni\ntai saadan haavan,\nenkä edes huomaa sitä."
+        ]
+      },
+      {
+        "question": "HAJUAISTIN YLIHERKKYYS\n\nMillainen hajuaisti sinulla on?",
+        "options": [
+          "Hajuaistini on\nmielestäni ihan tavallinen.",
+          "Hajuaistini on aika herkkä,\nmutta pärjään sen kanssa.",
+          "Minulla on tosi tarkka hajuaisti.\nHaistan kaiken\nliiankin herkästi."
+        ]
+      },
+      {
+        "question": "MAKU-/ HAJU-/ TUNTOAISTIN\nYLI- TAI ALIHERKKYYS\n\nSyötkö kaikenlaisia ruokia?",
+        "options": [
+          "Kyllä. Syön melkein kaikenlaisia ruokia.",
+          "Joskus on vaikeaa löytää\nminulle sopivaa ruokaa.",
+          "En. Valikoin tosi tarkasti,\nmitä syön."
+        ]
+      },
+      {
+        "question": "TASAPAINO\n\nMillainen tasapaino sinulla on?",
+        "options": [
+          "Tasapainoni on tosi hyvä.",
+          "Tasapainoni on ok.",
+          "Tasapainoni on huono."
+        ]
+      },
+      {
+        "question": "TASAPAINOAISTIN YLIHERKKYYS\n\nTuntuuko joku seuraavista\npaikoista sinusta niin\nepämiellyttävältä,\nettä et halua mennä sinne?"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Perhe ja läheiset",
+    "questions": [
+      {
+        "question": "Vastaa, jos sinulla on vanhemmat:\nMiten tulet toimeen\nvanhempiesi kanssa?",
+        "options": [
+          "Tulen tosi hyvin toimeen vanhempieni kanssa.",
+          "Meillä on ihan ok välit.",
+          "Tulen huonosti toimeen\nvanhempieni kanssa."
+        ]
+      },
+      {
+        "question": "Vastaan, jos sinulla on sisaruksia:\nMiten tulet toimeen\nsisarustesi kanssa?",
+        "options": [
+          "Tulen tosi hyvin toimeen\\nsisarusteni kanssa.",
+          "Meillä on ihan ok välit.",
+          "Tulen huonosti toimeen\nsisarusteni kanssa."
+        ]
+      },
+      {
+        "question": "Vastaa, jos sinulla on kumppani:\nOletko tyytynäinen\nparisuhteeseesi?",
+        "options": [
+          "Olen tosi tyytyäinen\nparisuhteeseeni.",
+          "Parisuhteeni on ihan ok.",
+          "En ole tyytyväinen parisuhteeseeni."
+        ]
+      },
+      {
+        "question": "Onko sinulla elämässäsi\nmuita tärkeitä ihmisiä?",
+        "options": [
+          "Kyllä,heitä on monta.",
+          "On ainakin yksi.",
+          "Ei ole."
+        ]
+      },
+      {
+        "question": "Tunnetko itsesi yksinäiseksi?",
+        "options": [
+          "En  tunne itseäni yksinäiseksi.",
+          "Tunnen joskus itseni yksinäiseksi.",
+          "Tunnen usein itseni yksinäiseksi."
+        ]
+      },
+      {
+        "question": "Onko läheisissä\nihmissuhteissasi\nväkivaltaa tai sen uhkaa?",
+        "options": [
+          "Ei ole.",
+          "Ei ole enää nykyään.",
+          "Kyllä on."
+        ]
+      },
+      {
+        "question": "Onko sinulla lemmikkieläin?",
+        "options": [
+          "Kyllä on, ja se on minulle tärkeä.",
+          "Ei ole, enkä haluakaan.",
+          "Ei ole, mutta haluaisin.\nTAI\nOn,mutta siitä on minulle harmia"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Asuminen ja ympäristö",
+    "questions": [
+      {
+        "question": "Oletko tyytyväinen kotiisi?",
+        "options": [
+          "Olen tosi tyytyäinen kotiini.",
+          "Kotini on ihan ok.",
+          "En ole tyytyväinen kotiini."
+        ]
+      },
+      {
+        "question": "Voitko itse päättää asumisestasi?",
+        "options": [
+          "Kyllä, voin itse\npäättää asumisestani.",
+          "Voin itse päättää joistakin\nasioista asumisessani.",
+          "En voi itse päättää asumisestani."
+        ]
+      },
+      {
+        "question": "Oletko tyytynäinen siihen,\nmissä kotisi sijaitsee?",
+        "options": [
+          "Olen tosi tyytyväinen\nkotini sijaintiin.",
+          "Kotini sijainti on ihan ok.",
+          "En ole tyytyväinen\nkotini sijaintiin."
+        ]
+      },
+      {
+        "question": "Mitkä asiat kodissasi\novat sinulle tosi tärkeitä?"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Liikkuminen ja vapaa-aika",
+    "img": "assets/images/vapaa-aika.png",
+    "questions": [
+      {
+        "question": "Pääsetkö liikkumaan kaikkiin\npaikkoihin minne haluat?",
+        "options": [
+          "Kyllä, pääsen aina liikkumaan\nsinne minne haluan.",
+          "Pääsen yleensä liikkumaan\nsinne minne haluan.",
+          "En pääse liikkumaan sinne\nminne haluan."
+        ]
+      },
+      {
+        "question": "Voitko itse päättää siitä,\nmitä teet vapaa-ajallasi?",
+        "options": [
+          "Kyllä, voin itse päättää vapaa-ajastani.",
+          "Voin päättää jonkin verran\nvapaa-ajastani.",
+          "En voi itse päättää vapaa-ajastani."
+        ]
+      },
+      {
+        "question": "Vastaa, jos käytät sosiaalista\nmediaa, eli somea.\n\nAiheuttaako somen käyttö\nsinulle harmia?\n\n(some:esimerkiksi Facebook,\nWhatsApp, Instagram tai Youtube-\nvideot)",
+        "options": [
+          "Somen käyttö ei aiheuta\nminulle harmia.",
+          "Somen käyttö aiheuttaa\nminulle joskus harmia.",
+          "Somen käyttö aiheuttaa\nminulle usein harmia."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Raha",
+    "img": "assets/images/raha.png",
+    "questions": [
+      {
+        "question": "Miten rahasi riittävät?",
+        "options": [
+          "Rahani riittävät hyvin\nsiihen mitä tarvitsen.",
+          "Rahani riittävät aika hyvin.",
+          "Rahani riittävät huonosti."
+        ]
+      },
+      {
+        "question": "Tarvitsetko apua\nraha-asioittesi hoitamiseen?",
+        "options": [
+          "Hoidan raha-asioitani\nitsenäisesti.",
+          "Tarvitsen apua joidenkin\nraha-asioideni hoitamiseen\n(esimerkiksi laskujen maksamiseen).",
+          "En pysty hoitamaan\niraha-asioitani itsenäisesti."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Elämäni tärkeät asiat",
+    "img": "assets/images/aika.png",
+    "questions": [
+      {
+        "question": "Mitä ajattelet\ntulevaisuudestasi?",
+        "options": [
+          "Tulevaisuuteni näyttää hyvältä.",
+          "En erityisemmin ajattele tulevaisuutta.",
+          "Tulevaisuuteni ei näytä hyvältä."
+        ]
+      },
+      {
+        "question": "Otetaanko mielipiteesi huomioon\nsinua koskevissa asioissa?",
+        "options": [
+          "Kyllä, mielipiteeni otetaan huomioon.",
+          "Mielipiteeni otetaan joskus huomioon.",
+          "Ei, mielipiteitäni ei oteta huomioon."
+        ]
+      },
+      {
+        "question": "Mitä ajattelet itsestäsi?",
+        "options": [
+          "Olen tyytyväinen itseeni.",
+          "Olen ihan ok.",
+          "En ole tyytynäinen itseeni."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Huolet ja murheet",
+    "img": "assets/images/huolet ja murheet.png",
+    "questions": [
+      {
+        "question": "Onko sinulla huolia\nja murheita?",
+        "options": [
+          "Ei, minulla ei ole huolia eikä murheita.",
+          "Minulla on joskus huolia ja murheita.",
+          "Kyllää,minulla on usein huolia ja\nmurheita."
+        ]
+      },
+      {
+        "question": "Onko sinulla joku,\njolle voit kertoa mieltäsi\npainavista asioista?",
+        "options": [
+          "Kyllä minulla on.",
+          "Kyllä, mutta kertominen on vaikeaa.",
+          "Ei ole ketään, jolle voisin kertoa niistä."
+        ]
+      },
+      {
+        "question": "Onko joku tehnyt sinulle\npahaa tai kohdellut\nsinua huonosti?",
+        "options": [
+          "Ei ole.",
+          "Ei viime aikoina.",
+          "Kyllä on ja haluaisin puhua\nsiitä jonkun kanssa."
+        ]
+      },
+      {
+        "question": "Pelottaako tai ahdistaako\nsinua joku asia?",
+        "options": [
+          "Ei pelota eikä ahdista.",
+          "Ei viime aikoina.",
+          "Kyllä minua pelottaa ja ahdistaa,\nja tarvitsen sen vuoksi apua."
+        ]
+      },
+      {
+        "question": "Oletko ajatellut\ntehdä jotain pahaa itsellesi?",
+        "options": [
+          "En ole ajatellut sellaista.",
+          "Joskus olen,\nmutta en enää nykyisin.",
+          "Kyllä, ajattelen sitä."
+        ]
+      },
+      {
+        "question": "Tiedätkö,mistä voit\npyytää apua silloin,\nkun sinulla on\nhuolia ja murheita?",
+        "options": [
+          "Kyllä, tiedän ja osaan pyytää apua.",
+          "Tiedän, mutta avun pyytäminen\nvoi olla vaikeaa.",
+          "En tiedä mistä voin pyytää apua."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Oma terveys",
+    "img": "assets/images/terveys.png",
+    "questions": [
+      {
+        "question": "Mitä ajattelet terveydestäsi?",
+        "options": [
+          "Tunnen itseni tosi terveeksi.",
+          "Terveyteni on ihan ok.",
+          "En tunne itseäni terveeksi."
+        ]
+      },
+      {
+        "question": "Mitä teet silloin,\nkun sairastut?",
+        "options": [
+          "Osaan hoitaa itseäni.",
+          "Osaan pyytää apua, jos tarvitsen.",
+          "En tiedä mistä saan apua."
+        ]
+      },
+      {
+        "question": "Tarvitsetko apua lääkeasioissa?",
+        "options": [
+          "En tarvitse apua lääkeasioissa.",
+          "Tarvitsen niissä jonkin verran apua.",
+          "Tarvitsen lääkeasioissa paljon apua."
+        ]
+      },
+      {
+        "question": "Millaisessa kunnossa\nhampaasi ovat?",
+        "options": [
+          "Hampaani ovat hyvässä kunnossa.",
+          "Hampaistani on joskus vaivaa.",
+          "Hampaani ovat huonossa kunnossa."
+        ]
+      },
+      {
+        "question": "Millaiseksi tunnet mielialasi?",
+        "options": [
+          "Mielialani on oikein hyvä.",
+          "Mielialani on ihan ok.",
+          "Mielialani on huono."
+        ]
+      },
+      {
+        "question": "Miten nukut?",
+        "options": [
+          "Nukun yleensä hyvin.",
+          "Nukun joskus huonosti.",
+          "Nukun usein huonosti."
+        ]
+      },
+      {
+        "question": "Käytätkö omasta mielestäsi\nliikaa päihteitä?\n\n(alkoholia, tupakkaa,\nnuuskaa, huumeita)",
+        "options": [
+          "En käytä liikaa päihteitä.",
+          "Käytän joskus liikaa päihteitä.",
+          "Kyllä, minun pitäisi\nvähentää päihteiden käyttöä."
+        ]
+      },
+      {
+        "question": "Onko sinulla seksiin\ntai seksuaalisuuteen\nliittyviä kysymyksiä?",
+        "options": [
+          "Ei ole.",
+          "On joskus.",
+          "On usein ja haluaisin jutella\nniistä jonkun kanssa."
+        ]
+      },
+      {
+        "question": "Onko sinulla virtsaamiseen tai\nulostamiseen liittyviä vaivoja?",
+        "options": [
+          "Ei ole.",
+          "Ei yleensä.",
+          "Kyllä on ja tarvitsen apua\nniiden takia."
+        ]
+      },
+      {
+        "question": "Kysymys naisille:\n\nOnko sinulla kuukautisiin\ntai vaihdevuosiin\nliittyviä kysymyksiä?",
+        "options": [
+          "Ei ole.",
+          "Ei yleensä.",
+          "Kyllä on ja tarvitsen apua\nniiden takia."
+        ]
+      },
+      {
+        "question": "Jos sinulla on terveyteesi\nliittyviä kysymyksiäm\ntiedätkö mistä saat neuvoja?",
+        "options": [
+          "Kyllä, tiedän ja osaan kysyä.",
+          "Tiedän, mutta kysyminen\nvoi olla vaikeaa.",
+          "En tiedä mistää saa neuvoja.\nTAI\nEn osaa kysyä neuvoja."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Arjen askareet",
+    "img": "assets/images/arjen askareet.png",
+    "questions": [
+      {
+        "question": "Miten selviät kotitöistä?\n(siivous, tiskaus, pyykinpesu)",
+        "options": [
+          "Osaan huolehtia kotitöistä itse.",
+          "Tarvitsen kotitöissä ohjausta.",
+          "Tarvitsen kotitöissä paljon apua."
+        ]
+      },
+      {
+        "question": "Miten kaupassa asiointi\nsujuu sinulta?",
+        "options": [
+          "Osaan käydä kaupassa itsenäisesti.",
+          "Tarvitsen kaupassa käyntiin ohjausta.",
+          "En osaa käydä kaupassa itsenäisesti."
+        ]
+      },
+      {
+        "question": "Osaatko huolehtia\nsovituista aikatauluista?",
+        "options": [
+          "Osaan huolehtia\naikatauluista itsenäisesti.",
+          "Tarvitsen aikatauluista\nhuolehtimiseen ohjausta.",
+          "En osaa huolehtia aikatauluista itsenäisesti."
+        ]
+      },
+      {
+        "question": "Missä arjen asioissa\ntarvitset erityisesti apua?"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Työ",
+    "img": "assets/images/valita työ.png",
+    "questions": [
+      {
+        "question": "Mitä mieltä olet\ntyö-, työtoiminta- tai\npäivätoimintapaikastasi?",
+        "options": [
+          "Pidän siitä paljon.",
+          "Se on ihan ok.",
+          "En pidä siitä yhtään."
+        ]
+      },
+      {
+        "question": "Pidätkö työtehtävistäsi?",
+        "options": [
+          "Pidän työtehtävistäni paljon.",
+          "Työtehtäväni ovat ihan ok.",
+          "En pidä työtehtävistäni."
+        ]
+      },
+      {
+        "question": "Saatko työtehtäviisi tarpeeksi\napua ja neuvoja?",
+        "options": [
+          "Saan apua ja neuvoja\naina kun tarvitsen.",
+          "Saan yleensä apua ja neuvoja.",
+          "En saa tarpeeksi apua ja neuvoja."
+        ]
+      },
+      {
+        "question": "Minkälaiset välit sinulla on\ntyökavereittesi kanssa?",
+        "options": [
+          "Meillä on hyvät välit.",
+          "Meillä on ihan ok välit.",
+          "Meillä on huonot välit."
+        ]
+      }
+    ]
+  }
+]

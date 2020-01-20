@@ -1,46 +1,62 @@
-[
-    {
-     "id": 1, "subject": "Perhe ja läheiset"
-    },
+{
+  "id": 1,
+  "subject": "Perhe ja läheiset",
+  "questions": [
     {
       "question": "Vastaa, jos sinulla on vanhemmat:\nMiten tulet toimeen\nvanhempiesi kanssa?",
-      "answer1": "Tulen tosi hyvin toimeen vanhempieni kanssa.",
-      "answer2": "Meillä on ihan ok välit.",
-      "answer3": "Tulen huonosti toimeen\nvanhempieni kanssa."
+      "options": [
+        "Tulen tosi hyvin toimeen vanhempieni kanssa.",
+        "Meillä on ihan ok välit.",
+        "Tulen huonosti toimeen\nvanhempieni kanssa."
+      ]
     },
     {
       "question": "Vastaan, jos sinulla on sisaruksia:\nMiten tulet toimeen\nsisarustesi kanssa?",
-      "answer1": "Tulen tosi hyvin toimeen\nsisarusteni kanssa.",
-      "answer2": "Meillä on ihan ok välit."
+      "options": [
+        "Tulen tosi hyvin toimeen\\nsisarusteni kanssa.",
+        "Meillä on ihan ok välit.",
+        "Tulen huonosti toimeen\nsisarusteni kanssa."
+      ]
     },
     {
       "question": "Vastaa, jos sinulla on kumppani:\nOletko tyytynäinen\nparisuhteeseesi?",
-      "answer1": "Olen tosi tyytyäinen\nparisuhteeseeni.",
-      "answer2": "Parisuhteeni on ihan ok.",
-      "answer3": "En ole tyytynäinen parisuhteeseeni."
+      "options": [
+        "Olen tosi tyytyäinen\nparisuhteeseeni.",
+        "Parisuhteeni on ihan ok.",
+        "En ole tyytyväinen parisuhteeseeni."
+      ]
     },
     {
       "question": "Onko sinulla elämässäsi\nmuita tärkeitä ihmisiä?",
-      "answer1": "Kyllä,heitä on monta.",
-      "answer2": "On ainakin yksi.",
-      "answer3": "Ei ole."
+      "options": [
+        "Kyllä,heitä on monta.",
+        "On ainakin yksi.",
+        "Ei ole."
+      ]
     },
     {
       "question": "Tunnetko itsesi yksinäiseksi?",
-      "answer1": "En  tunne itseäni yksinäiseksi.",
-      "answer2": "Tunnen joskus itseni yksinäiseksi.",
-      "answer3": "Tunnen usein itseni yksinäiseksi."
+      "options": [
+        "En  tunne itseäni yksinäiseksi.",
+        "Tunnen joskus itseni yksinäiseksi.",
+        "Tunnen usein itseni yksinäiseksi."
+      ]
     },
     {
       "question": "Onko läheisissä\nihmissuhteissasi\nväkivaltaa tai sen uhkaa?",
-      "answer1": "Ei ole.",
-      "answer2": "Ei ole enää nykyään.",
-      "answer3": "Kyllä on."
+      "options": [
+        "Ei ole.",
+        "Ei ole enää nykyään.",
+        "Kyllä on."
+      ]
     },
     {
       "question": "Onko sinulla lemmikkieläin?",
-      "answer1": "Kyllä on, ja se on minulle tärkeä.",
-      "answer2": "Ei ole, enkä haluakaan.",
-      "answer3": "Ei ole, mutta haluaisin.\nTAI\nOn,mutta siitä on minulle harmia"
+      "options": [
+        "Kyllä on, ja se on minulle tärkeä.",
+        "Ei ole, enkä haluakaan.",
+        "Ei ole, mutta haluaisin.\nTAI\nOn,mutta siitä on minulle harmia"
+      ]
     }
   ]
+}

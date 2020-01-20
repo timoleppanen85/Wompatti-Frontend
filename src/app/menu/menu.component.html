@@ -3,25 +3,25 @@
   <table>
     <tr>
       <td></td>
-      <td routerLink="/questions"><div class="container"><img src="assets/images/aistit.jpg" id="senses"><div class="middle"><div class="text">Aistit</div></div></div></td>
-      <td routerLink="/questions"><div class="container"><img src="assets/images/perhe.png" id="family"><div class="middle"><div class="text">Perhe ja läheiset</div></div></div></td>
-      <td routerLink="/questions"><div class="container"><img src="assets/images/koti.png" id="home"><div class="middle"><div class="text">Asuminen ja ympäristö</div></div></div></td>
+      <td routerLinkActive="active" [routerLink]="['/questions', subjects[0]]"><div class="container"><img src="{{subjects[0].img}}"><div class="middle"><div class="text">{{subjects[0].name}}</div></div></div></td>
+      <td routerLinkActive="active" [routerLink]="['/questions', subjects[1]]"><div class="container"><img src="{{subjects[1].img}}"><div class="middle"><div class="text">{{subjects[1].name}}</div></div></div></td>
+      <td routerLinkActive="active" [routerLink]="['/questions', subjects[2]]"><div class="container"><img src="{{subjects[2].img}}"><div class="middle"><div class="text">{{subjects[2].name}}</div></div></div></td>
       <td></td>
     </tr>
     <tr>
-      <td routerLink="/questions"><div class="container"><img src="assets/images/valita työ.png" id="job"><div class="middle"><div class="text">Työ</div></div></div></td>
+      <td routerLinkActive="active" [routerLink]="['/questions', subjects[3]]"><div class="container"><img src="{{subjects[3].img}}"><div class="middle"><div class="text">{{subjects[3].name}}</div></div></div></td>
       <td colspan="3" rowspan="2"> <img src="assets/images/minä.png" id="menuMiddleImage"></td>
-      <td routerLink="/questions"><div class="container"><img src="assets/images/vapaa-aika.png" id="freetime"><div class="middle"><div class="text">Liikkuminen ja vapaa-aika</div></div></div></td>
+      <td routerLinkActive="active" [routerLink]="['/questions', subjects[4]]"><div class="container"><img src="{{subjects[4].img}}"><div class="middle"><div class="text">{{subjects[4].name}}</div></div></div></td>
     </tr>
     <tr>
-      <td routerLink="/questions"><div class="container"><img src="assets/images/arjen askareet.png" id="homework"><div class="middle"><div class="text">Arjen askareet</div></div></div></td>
-      <td routerLink="/questions"><div class="container"><img src="assets/images/raha.png" id="money"><div class="middle"><div class="text">Raha</div></div></div></td>
+      <td routerLinkActive="active" [routerLink]="['/questions', subjects[5]]"><div class="container"><img src="{{subjects[5].img}}"><div class="middle"><div class="text">{{subjects[5].name}}</div></div></div></td>
+      <td routerLinkActive="active" [routerLink]="['/questions', subjects[6]]"><div class="container"><img src="{{subjects[6].img}}"><div class="middle"><div class="text">{{subjects[6].name}}</div></div></div></td>
     </tr>
     <tr>
       <td></td>
-      <td routerLink="/questions"><div class="container"><img src="assets/images/terveys.png" id="health"><div class="middle"><div class="text">Oma terveys</div></div></div></td>
-      <td routerLink="/questions"><div class="container"><img src="assets/images/huolet ja murheet.png" id="worries&worries"><div class="middle"><div class="text">Huolet ja murheet</div></div></div></td>
-      <td routerLink="/questions"><div class="container"><img src="assets/images/aika.png" id="time"><div class="middle"><div class="text">Elämäni tärkeät asiat</div></div></div></td>
+      <td routerLinkActive="active" [routerLink]="['/questions', subjects[7]]"><div class="container"><img src="{{subjects[7].img}}"><div class="middle"><div class="text">{{subjects[7].name}}</div></div></div></td>
+      <td routerLinkActive="active" [routerLink]="['/questions', subjects[8]]"><div class="container"><img src="{{subjects[8].img}}"><div class="middle"><div class="text">{{subjects[8].name}}</div></div></div></td>
+      <td routerLinkActive="active" [routerLink]="['/questions', subjects[9]]"><div class="container"><img src="{{subjects[9].img}}"><div class="middle"><div class="text">{{subjects[9].name}}</div></div></div></td>
       <td></td>
     </tr>
   </table>

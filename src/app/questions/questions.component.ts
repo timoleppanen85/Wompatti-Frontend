@@ -2,8 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import { MatDialog } from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
 import * as data from '../../data.json';
-import {Router} from '@angular/router';
-import {getLocaleDayNames} from '@angular/common';
+import {ActivatedRoute, Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-questions',
@@ -11,14 +11,13 @@ import {getLocaleDayNames} from '@angular/common';
   styleUrls: ['./questions.component.css']
 })
 export class QuestionsComponent implements OnInit {
+  question: any = data[0].question;
 
-  question: any = data[0].perheJaLäheiset1.question;
-
-  constructor(public dialog: MatDialog, private router: Router) {
+  constructor(public dialog: MatDialog, private router: Router, private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit() {
-    console.log(data);
+  const id = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
   openHint(): void {

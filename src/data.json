@@ -139,6 +139,7 @@
   {
     "id": 3,
     "subject": "Asuminen ja ympäristö",
+    "img": "assets/images/koti.png",
     "questions": [
       {
         "question": "Oletko tyytyväinen kotiisi?",

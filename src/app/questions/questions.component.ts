@@ -11,13 +11,15 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./questions.component.css']
 })
 export class QuestionsComponent implements OnInit {
-  question: any = data[0].question;
+  question: any = data[0].questions[0].question;
+  answer: any = data[0].questions[0].options;
 
   constructor(public dialog: MatDialog, private router: Router, private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit() {
-  const id = this.activatedRoute.snapshot.paramMap.get('id');
+    // TODO snapshot/subscribe
+    const id = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
   openHint(): void {

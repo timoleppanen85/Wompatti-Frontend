@@ -2,6 +2,7 @@
   {
     "id": 1,
     "subject": "Aistit",
+    "img" : "assets/images/aistit.jpg",
     "questions": [
       {
         "question": "KUULO\n\nMillainen kuulo sinulla on?",
@@ -75,6 +76,7 @@
   {
     "id": 2,
     "subject": "Perhe ja läheiset",
+    "img" : "assets/images/perhe.png",
     "questions": [
       {
         "question": "Vastaa, jos sinulla on vanhemmat:\nMiten tulet toimeen\nvanhempiesi kanssa?",

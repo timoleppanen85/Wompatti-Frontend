@@ -30,6 +30,34 @@ h6 {
   display: inline;
 }
 
+#overviewDiv {
+  margin-left: 90%;
+}
+
+#overView {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  margin-top: 30px;
+  border: 2px solid #00A887;
+  background: white;
+  border-radius: 50px;
+  height: 50px;
+  width: 80px;
+  font-size: 2vh;
+  color: dimgrey;
+}
+
+.modal-container {
+  position: fixed;
+  background-color: #FFFFFF;
+  border: 1px solid #00A887;
+  left: 50%;
+  border-radius: 25px;
+  padding: 10px;
+  transform: translate(-50%, 0);
+}
+
 #anonymousUserButton {
   position: relative;
   border: 2px solid #00A887;
@@ -51,7 +79,6 @@ h6 {
   transform: translate(-50%, -50%);
 
 }
-
 
 #partnerLogos {
   position: fixed;

@@ -3,6 +3,7 @@ import {MatDialog} from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
 import * as data from '../../data.json';
 import {ActivatedRoute, Router} from '@angular/router';
+import {MenuComponent} from '../menu/menu.component';
 
 
 @Component({
@@ -20,9 +21,9 @@ export class QuestionsComponent implements OnInit {
 
   ngOnInit() {
     // TODO snapshot / subscribe;
-    // tslint:disable-next-line:radix
-   // const id = parseInt(this.activatedRoute.snapshot.paramMap.get('id'));
-   // this.selectedId = id;
+    this.activatedRoute.paramMap.subscribe(params => {
+      this.selectedId = params.get('id');
+    });
   }
 
   openHint(): void {

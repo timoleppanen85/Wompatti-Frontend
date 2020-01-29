@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
-import * as data from '../../data.json';
+import data from '../../data.json';
 import {ActivatedRoute, Router} from '@angular/router';
 import {MenuComponent} from '../menu/menu.component';
 
@@ -13,8 +13,8 @@ import {MenuComponent} from '../menu/menu.component';
 })
 export class QuestionsComponent implements OnInit {
   public selectedId;
-  question: any = data[0].questions[0].question;
-  answer: any = data[0].questions[0].options;
+  question: any; // = data[0].questions[0].question;
+  answer: any; // = data[0].questions[0].options;
 
   constructor(public dialog: MatDialog, private router: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -24,6 +24,8 @@ export class QuestionsComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(params => {
       this.selectedId = params.get('id');
     });
+    this.question = data[this.selectedId].questions[this.selectedId].question;
+    this.answer = data[this.selectedId].questions[this.selectedId].options;
   }
 
   openHint(): void {

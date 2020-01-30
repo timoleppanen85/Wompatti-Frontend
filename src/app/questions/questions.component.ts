@@ -1,7 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
-import * as data from '../../data.json';
+
+
+// @ts-ignore
+import data from '../../data.json';
+
 import {ActivatedRoute, Router} from '@angular/router';
 import {MenuComponent} from '../menu/menu.component';
 

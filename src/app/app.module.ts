@@ -16,6 +16,8 @@ import { HintDialogComponent } from './hint-dialog/hint-dialog.component';
 import { ProjectOverviewComponent } from './project-overview/project-overview.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,8 @@ import { ProjectOverviewComponent } from './project-overview/project-overview.co
     LogoComponent,
     HintDialogComponent,
     ProjectOverviewComponent,
+
+
   ],
   imports: [
     BrowserModule,

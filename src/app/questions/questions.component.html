@@ -7,8 +7,8 @@
 
 <table>
   <td id="picture"><img src="{{image}}" alt="question_image"></td>
-  <td id="question">{{showQuestion()}}</td>
-  <td id="answer">
+  <td id="question"><p>{{showQuestion()}}</p></td>
+  <td id="answer"><p>
     <mat-radio-group
       class="radio-group"
       aria-labelledby="example-radio-group-label">
@@ -16,6 +16,7 @@
         {{answer}}
       </mat-radio-button>
     </mat-radio-group>
+  </p>
   </td>
   <td id="empty"><label>
     <textarea placeholder="Kirjoita tähän lisätietoja"></textarea>

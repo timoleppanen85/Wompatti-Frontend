@@ -1,12 +1,9 @@
-* {
-}
-
 body {
   overflow: hidden;
   margin: 0 auto;
 }
 
-p {
+#questionSetHeader {
   position: absolute;
   top: 200px;
   left: 55px;
@@ -55,7 +52,6 @@ table {
 }
 
 td {
-
   border: solid #00A887;
   border-radius: 25px;
   width: 400px;

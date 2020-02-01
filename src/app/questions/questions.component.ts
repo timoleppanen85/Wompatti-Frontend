@@ -20,7 +20,7 @@ export class QuestionsComponent implements OnInit {
   subject: any;
   image: any;
   currentQuestion: any[];
-  currentOptions: any[] = this.options;
+  currentOptions: any[];
 
   constructor(public dialog: MatDialog, private router: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -45,7 +45,6 @@ export class QuestionsComponent implements OnInit {
     });
   }
 
-
   showQuestion() {
     this.currentQuestion = data[this.selectedId].questions[this.questionIndex].question;
     if (this.questionIndex === data[this.selectedId].questions[0].question) {
@@ -55,9 +54,9 @@ export class QuestionsComponent implements OnInit {
   }
 
   showOptions() {
-    this.currentOptions = data[this.selectedId].questions[this.questionIndex].question.options;
-    if (this.questionIndex === data[this.selectedId].questions[0].options[this.questionIndex]) {
-      this.currentQuestion = data[this.selectedId].questions[this.questionIndex].options[this.questionIndex];
+    this.currentOptions = data[this.selectedId].questions[this.questionIndex].options;
+    if (this.questionIndex === data[this.selectedId].questions[0].options) {
+      this.currentQuestion = data[this.selectedId].questions[this.questionIndex].options;
     }
     return this.currentOptions;
   }
@@ -72,66 +71,4 @@ export class QuestionsComponent implements OnInit {
     }
     return this.currentQuestion;
   }
-
 }
-
-
-//     do {
-//       for (let = 0;
-//
-//       i < this
-//
-//         .currentQuestion;
-//     .
-//       length;
-//       ++
-//     )
-//       {
-//         console;
-//       .
-//
-//         log(i);
-//
-//         if (i
-//
-//           ===
-//           1{
-//           ;
-//         }
-//       )
-//         {
-//           console;
-//         .
-//
-//           log(i);
-//
-//           this;
-//         .
-//           question = data[this.selectedId].questions[i].question;
-//           return;
-//         }
-//       }
-//     }
-//     while (currentQuestion === currentQuestion.length);
-//     {
-//       ;
-//     }
-//     if (currentQuestion === currentQuestion.length) {
-//       this.router.navigate(['/result-data']);
-//     }
-//   }
-//
-// //   for (let j = 0; j < currentQuestion.length; j++) {
-// //     if (j === 2) {
-// //       this.question = data[this.selectedId].questions[i].question;
-// //     }
-// //   }
-// //   if (i === currentQuestion.length) {
-// //     this.router.navigate(['/result-data']);
-// //   }
-// // }
-//
-// // this.question = data[this.selectedId].questions[i].question;
-// // if (currentQuestion === currentQuestion.length) {
-// // console.log(currentQuestion.length);
-// this.router.navigate(['/result-data']);

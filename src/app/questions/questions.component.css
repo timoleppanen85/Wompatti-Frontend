@@ -1,5 +1,4 @@
 * {
-  list-style: none;
 }
 
 body {
@@ -9,10 +8,10 @@ body {
 
 p {
   position: absolute;
-  top: 19%;
-  left: 6%;
+  top: 200px;
+  left: 55px;
   color: #060E9F;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 #hintDiv {
@@ -53,40 +52,49 @@ table {
   margin-right: auto;
   margin-left: auto;
   border-spacing: 50px;
-  border-collapse: separate;
 }
 
 td {
+
   border: solid #00A887;
   border-radius: 25px;
   width: 400px;
-  height: 250px;
+  height: 80px;
+  text-align: center;
 }
 
 .modal-container {
-  position: fixed;
   background-color: #FFFFFF;
   border: 1px solid #00A887;
   left: 50%;
   border-radius: 25px;
-  padding: 10px;
+  padding: 20px;
   transform: translate(-50%, 0);
 }
 
 .radio-group {
   display: flex;
   flex-direction: column;
-  margin: 15px 0;
 }
 
 .radio-button {
   margin: 5px;
 }
 
-
 img {
+  margin-top: 50px;
   width: 170px;
   height: 170px;
 }
+textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 95%;
+  height: 98%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
 
 

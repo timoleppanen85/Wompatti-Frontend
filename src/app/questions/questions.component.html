@@ -2,13 +2,21 @@
 <app-logo></app-logo>
 
 <div>
-    <div id="questionSetHeader"></div>
+  <div id="questionSetHeader">{{subject}}</div>
 </div>
 
 <table>
-  <td id="picture"></td>
-  <td id="question">{{ question }}</td>
-  <td id="answer">{{ answer }}</td>
+  <td id="picture"><img src="{{image}}"></td>
+  <td id="question">{{showQuestion()}}</td>
+  <td id="answer">
+    <mat-radio-group
+      class="radio-group"
+      aria-labelledby="example-radio-group-label">
+      <mat-radio-button class="radio-button" *ngFor="let answer of currentOptions" [value]="answer">
+        {{answer}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </td>
   <td id="empty"><label>
     <textarea placeholder="Kirjoita tähän lisätietoja"></textarea>
   </label></td>

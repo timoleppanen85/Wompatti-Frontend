@@ -14,6 +14,7 @@ import { LogoComponent } from './logo/logo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HintDialogComponent } from './hint-dialog/hint-dialog.component';
 import { ProjectOverviewComponent } from './project-overview/project-overview.component';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 @NgModule({
@@ -30,17 +31,18 @@ import { ProjectOverviewComponent } from './project-overview/project-overview.co
     HintDialogComponent,
     ProjectOverviewComponent,
   ],
-  imports: [
-    BrowserModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatProgressBarModule,
-    MatDialogModule
-  ],
+    imports: [
+        BrowserModule,
+        MatMenuModule,
+        MatIconModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatProgressBarModule,
+        MatDialogModule,
+        MatRadioModule
+    ],
   entryComponents: [
   HintDialogComponent
   ],

@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
-import * as data from '../../data.json';
+
+// @ts-ignore
+import data from '../../data.json';
 import {ActivatedRoute, Router} from '@angular/router';
-import {MenuComponent} from '../menu/menu.component';
 
 
 @Component({
@@ -12,18 +13,26 @@ import {MenuComponent} from '../menu/menu.component';
   styleUrls: ['./questions.component.css']
 })
 export class QuestionsComponent implements OnInit {
-  public selectedId;
-  question: any = data[0].questions[0].question;
-  answer: any = data[0].questions[0].options;
+  selectedId;
+  questionIndex = 0;
+  question: any;
+  options: any;
+  subject: any;
+  image: any;
+  currentQuestion: any[];
+  currentOptions: any[];
 
   constructor(public dialog: MatDialog, private router: Router, private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit() {
-    // TODO snapshot / subscribe;
     this.activatedRoute.paramMap.subscribe(params => {
       this.selectedId = params.get('id');
     });
+    this.subject = data[this.selectedId].subject;
+    this.question = data[this.selectedId].questions[0].question;
+    this.options = data[this.selectedId].questions[0].options;
+    this.image = data[this.selectedId].img;
   }
 
   openHint(): void {
@@ -36,8 +45,30 @@ export class QuestionsComponent implements OnInit {
     });
   }
 
+  showQuestion() {
+    this.currentQuestion = data[this.selectedId].questions[this.questionIndex].question;
+    if (this.questionIndex === data[this.selectedId].questions[0].question) {
+      this.currentQuestion = data[this.selectedId].questions[this.questionIndex].question;
+    }
+    return this.currentQuestion;
+  }
+
+  showOptions() {
+    this.currentOptions = data[this.selectedId].questions[this.questionIndex].options;
+    if (this.questionIndex === data[this.selectedId].questions[0].options) {
+      this.currentQuestion = data[this.selectedId].questions[this.questionIndex].options;
+    }
+    return this.currentOptions;
+  }
+
   nextQuestion() {
-    // TODO for statement iterating through questions and saving results.
-    this.router.navigate(['/result-data']);
+    console.log(this.questionIndex);
+    console.log(data[this.selectedId].questions.length);
+    if (this.questionIndex <= data[this.selectedId].questions.length) {
+      this.questionIndex++;
+    } else {
+      this.router.navigate(['/result-data']);
+    }
+    return this.currentQuestion;
   }
 }

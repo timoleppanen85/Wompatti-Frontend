@@ -11,7 +11,7 @@
     </td>
 
     <td id="backToMenu" routerLink="/menu">
-      <button mat-button>Valikkoon</button>
+      <button mat-button *ngIf="router.url != '/menu'">Valikkoon</button>
     </td>
 
     <td>

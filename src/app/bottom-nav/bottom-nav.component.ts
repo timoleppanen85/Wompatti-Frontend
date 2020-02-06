@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -8,9 +8,14 @@ import {Router} from '@angular/router';
 })
 export class BottomNavComponent implements OnInit {
 
-  constructor(public router: Router) { }
+  constructor(public router: Router) {
+  }
 
   ngOnInit() {
+  }
+
+  results() {
+    this.router.navigate(['/result-data']);
   }
 
 }

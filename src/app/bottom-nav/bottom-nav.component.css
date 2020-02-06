@@ -16,6 +16,7 @@
 }
 
 #backToMenu {
+  pointer-events: none;
   text-align: right;
 }
 
@@ -26,8 +27,9 @@ td {
 }
 
 button {
-  border: 2px solid #060E9F;
+  border: 2px solid black;
   background: #FFFFFF;
   border-radius: 50px;
-  color: black;
+  color: #060E9F;
+  pointer-events: auto;
 }

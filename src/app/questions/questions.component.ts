@@ -64,9 +64,8 @@ export class QuestionsComponent implements OnInit {
   nextQuestion() {
     console.log(this.questionIndex);
     console.log(data[this.selectedId].questions.length);
-    if (this.questionIndex <= data[this.selectedId].questions.length) {
-      this.questionIndex++;
-    } else {
+    this.questionIndex++;
+    if (this.questionIndex >= data[this.selectedId].questions.length) {
       this.router.navigate(['/result-data']);
     }
     return this.currentQuestion;

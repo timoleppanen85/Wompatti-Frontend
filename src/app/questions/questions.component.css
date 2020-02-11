@@ -92,8 +92,8 @@ textarea {
   background: transparent;
   border: none;
   outline: none;
-  width: 95%;
-  height: 98%;
+  width: 100%;
+  height: 200px;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 

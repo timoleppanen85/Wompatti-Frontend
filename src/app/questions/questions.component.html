@@ -12,7 +12,10 @@
     <mat-radio-group
       class="radio-group"
       aria-labelledby="example-radio-group-label">
-      <mat-radio-button class="radio-button" *ngFor="let answer of showOptions()" [value]="answer">
+      <mat-radio-button class="radio-button"
+                        *ngFor="let answer of showOptions()"
+                        (change)="radioChangeHandler($event)"
+                        [value]="answer">
         {{answer}}
       </mat-radio-button>
     </mat-radio-group>
@@ -29,7 +32,7 @@
 <!--<mat-progress-bar mode="determinate" width="200px"></mat-progress-bar>-->
 
 <div id="nextDiv">
-  <button id="next" (click)="nextQuestion()">Seuraava</button>
+  <button id="next" (click)="nextQuestion() && create()">Seuraava</button>
 </div>
 
 <app-bottom-nav></app-bottom-nav>

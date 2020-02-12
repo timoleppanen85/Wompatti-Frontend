@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {MatDialog} from '@angular/material';
+import {MatDialog, MatRadioChange} from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
 
 // @ts-ignore
@@ -21,7 +21,7 @@ export class QuestionsComponent implements OnInit {
   image: any;
   currentQuestion: any[];
   currentOptions: any[];
-  selectedAnswer: any;
+  selectedAnswers: any = [];
 
   constructor(public dialog: MatDialog, private router: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -72,13 +72,17 @@ export class QuestionsComponent implements OnInit {
     return this.currentQuestion;
   }
 
-  radioChangeHandler(event: any) {
-    this.currentOptions = event.target.value;
-    console.log(event.target.value);
+
+  radioChangeHandler(event: MatRadioChange, thisData) {
+    const object = this.showOptions().filter(x => x.options === thisData.options)[this.selectedAnswers];
+    console.log(thisData);
+    object.selected = event.value;
+    if (!this.selectedAnswers.some(x => x.options === thisData.options)) {
+      this.selectedAnswers.push(object);
+    }
   }
 
   create() {
-    localStorage.setItem('currentOptions', JSON.stringify(
-      data[this.selectedId].questions[this.questionIndex].options[this.radioChangeHandler(this.currentOptions)]));
+    localStorage.setItem('selectedAnswers', this.selectedAnswers);
   }
 }

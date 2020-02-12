@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HintDialogComponent } from './hint-dialog/hint-dialog.component';
 import { ProjectOverviewComponent } from './project-overview/project-overview.component';
 import {MatRadioModule} from '@angular/material/radio';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import {MatRadioModule} from '@angular/material/radio';
         BrowserAnimationsModule,
         MatProgressBarModule,
         MatDialogModule,
-        MatRadioModule
+        MatRadioModule,
+        FormsModule
     ],
   entryComponents: [
   HintDialogComponent

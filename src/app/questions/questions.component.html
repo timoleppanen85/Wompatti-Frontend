@@ -11,10 +11,10 @@
   <td id="answer">
     <mat-radio-group
       class="radio-group"
-      aria-labelledby="example-radio-group-label">
+    [(ngModel)]="selectedAnswers">
       <mat-radio-button class="radio-button"
                         *ngFor="let answer of showOptions()"
-                        (change)="radioChangeHandler($event)"
+                        (change)="radioChangeHandler($event, answer)"
                         [value]="answer">
         {{answer}}
       </mat-radio-button>

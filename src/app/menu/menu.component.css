@@ -61,6 +61,7 @@ td {
 
 #menuMiddleImage {
   height: 100%;
+  pointer-events: none;
 }
 
 #test {

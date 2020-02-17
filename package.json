@@ -28,7 +28,8 @@
     "rxjs": "^6.5.4",
     "tslib": "^1.9.0",
     "undo": "^0.1.4",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "pdfmake": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.23",

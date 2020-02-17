@@ -61,6 +61,7 @@ td {
   border-radius: 25px;
   width: 400px;
   height: 250px;
+  vertical-align: middle;
 }
 
 .modal-container {

@@ -7,15 +7,13 @@
 <!--  vastauspaketti-->
   <table>
     <!--  muuta hakemaan vastaukset välimuistista-->
-    <td id="picture"> <img id="answerImage" src="assets/images/wompattiEmpty.png" alt="Ei vastausta"/> </td>
-    <td id="question"></td>
-    <td id="answer"></td>
-    <td id="empty"></td>
+    <td id="picture">
+      <img id="answerImage" src="assets/images/wompattiEmpty.png" alt="Ei vastausta"/>
+      <br>
+      <button id="questionButton1" (click)="showQuestion()">1</button>
+      <!--  muuta hakemaan kysymys nro automaagisesti-->
+    </td>
   </table>
-  <div id="questionReminder">
-    <button id="questionButton" (click)="showQuestion()">1</button>
-    <!--  muuta hakemaan kysymys nro automaagisesti-->
-  </div>
 </div>
 <div>
 <div id="printPdf">

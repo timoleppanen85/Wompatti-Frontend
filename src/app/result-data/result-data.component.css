@@ -1,0 +1,71 @@
+#pdfSaveButton {
+  position: absolute;
+  bottom: 160px;
+  right: 260px;
+  border: 2px solid #00A887;
+  background: white;
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  font-size: 2vh;
+  color: #060E9F;
+}
+#pdfPrintButton {
+  position: absolute;
+  bottom: 160px;
+  right: 60px;
+  border: 2px solid #00A887;
+  background: white;
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  font-size: 2vh;
+  color: #060E9F;
+}
+#questionButton {
+  position: absolute;
+  bottom: 260px;
+  left: 60px;
+  border: 2px solid #00A887;
+  background: white;
+  border-radius: 50px;
+  height: 50px;
+  width: 70px;
+  font-size: 2vh;
+  color: #060E9F;
+}
+#answerImage {
+  max-width:40%;
+  height:auto;
+
+}
+#resultBox {
+  padding-left: 5vw;
+  padding-top: 25vh;
+}
+
+td {
+  border: solid #00A887;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+table {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#resultTable {
+
+}
+
+#questionButton1 {
+  border: 2px solid #00A887;
+  background: white;
+  border-radius: 50px;
+  height: 50px;
+  width: 70px;
+  font-size: 2vh;
+  color: #060E9F;
+}

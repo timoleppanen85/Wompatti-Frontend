@@ -1,3 +1,28 @@
-<p>
-  result-data works!
-</p>
+<body>
+<app-logo></app-logo>
+<div>
+  <div id="resultHeader"></div>
+</div>
+<div id="resultBox">
+<!--  vastauspaketti-->
+  <table>
+    <!--  muuta hakemaan vastaukset välimuistista-->
+    <td id="picture">
+      <img id="answerImage" src="assets/images/wompattiEmpty.png" alt="Ei vastausta"/>
+      <br>
+      <button id="questionButton1" (click)="showQuestion()">1</button>
+      <!--  muuta hakemaan kysymys nro automaagisesti-->
+    </td>
+  </table>
+</div>
+<div>
+<div id="printPdf">
+  <button id="pdfPrintButton" (click)="generatePdf()">Tulosta</button>
+  <!--  tee pfd-sivun asettelu-->
+</div>
+<div id="savePdf">
+  <button id="pdfSaveButton" (click)="generatePdf()">Tallenna</button>
+  <!--  tee pfd-sivun asettelu-->
+</div>
+</div>
+<app-bottom-nav></app-bottom-nav>

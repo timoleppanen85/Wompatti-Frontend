@@ -29,7 +29,7 @@
         ]
       },
       {
-        "question": "VALOHERKKYYS\n\nHäiritsevätkö jotkut valot sinua?\n\n(esimerkiksi\nauringonvalo,\nloisteputkien valo\ntai välkkyvät valot",
+        "question": "VALOHERKKYYS\n\nHäiritsevätkö jotkut valot sinua?\n\n(esimerkiksi\nauringonvalo,\nloisteputkien valo\ntai välkkyvät valot)",
         "options": [
           "Ei, valot eivät häiritse minua.",
           "Joskus ne häiritsevät.",
@@ -89,7 +89,7 @@
       {
         "question": "Vastaan, jos sinulla on sisaruksia:\nMiten tulet toimeen\nsisarustesi kanssa?",
         "options": [
-          "Tulen tosi hyvin toimeen\\nsisarusteni kanssa.",
+          "Tulen tosi hyvin toimeen\nsisarusteni kanssa.",
           "Meillä on ihan ok välit.",
           "Tulen huonosti toimeen\nsisarusteni kanssa."
         ]

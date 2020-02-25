@@ -3,11 +3,24 @@
   border-radius: 25px;
   border: 2px solid #00A887;
   box-shadow: none;
-  height: 350px;
+  height: 700px;
+  width: 30vw;
 }
 
-p {
+h2 {
   margin-top: 3vw;
   color: #060E9F;
   font-size: 1vw;
+  background-color: #FFFFFF;
+}
+
+p {
+  color: #060E9F;
+  font-size: 1vw;
+  background-color: #FFFFFF;
+}
+li {
+  color: #060E9F;
+  font-size: 1vw;
+  background-color: #FFFFFF;
 }

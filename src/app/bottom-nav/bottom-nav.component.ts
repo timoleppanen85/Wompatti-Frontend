@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-bottom-nav',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BottomNavComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) {
+  }
 
   ngOnInit() {
+  }
+
+  results() {
+    this.router.navigate(['/result-data']);
   }
 
 }

@@ -2,13 +2,24 @@
 <app-logo></app-logo>
 
 <div>
-    <div id="questionSetHeader"></div>
+  <p id="questionSetHeader">{{subject}}</p>
 </div>
 
-<table id="resultTable">
-  <td id="picture"></td>
-  <td id="question">{{ question }}</td>
-  <td id="answer"></td>
+<table>
+  <td id="picture"><img src="{{image}}" alt="question_image"></td>
+  <td id="question">{{showQuestion()}}</td>
+  <td id="answer">
+    <mat-radio-group
+      class="radio-group"
+    [(ngModel)]="selectedAnswers">
+      <mat-radio-button class="radio-button"
+                        *ngFor="let answer of showOptions()"
+                        (change)="radioChangeHandler($event, answer)"
+                        [value]="answer">
+        {{answer}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </td>
   <td id="empty"><label>
     <textarea placeholder="Kirjoita tähän lisätietoja"></textarea>
   </label></td>
@@ -17,8 +28,6 @@
 <div id="hintDiv">
   <button id="hint" (click)="openHint()">Ohje</button>
 </div>
-
-<mat-progress-bar mode="determinate"></mat-progress-bar>
 
 <div id="nextDiv">
   <button id="next" (click)="nextQuestion()">Seuraava</button>

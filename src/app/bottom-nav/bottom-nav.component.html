@@ -11,11 +11,11 @@
     </td>
 
     <td id="backToMenu" routerLink="/menu">
-      <button mat-button>Valikkoon</button>
+      <button mat-button *ngIf="router.url != '/menu'">Valikkoon</button>
     </td>
 
     <td>
-      <button mat-button>Tuloksiin</button>
+      <button mat-button (click)="results()">Tuloksiin</button>
     </td>
   </table>
 </div>

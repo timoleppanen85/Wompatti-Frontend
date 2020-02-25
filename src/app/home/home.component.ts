@@ -22,7 +22,6 @@ export class HomeComponent implements OnInit {
 
   openProjectOverview(): void {
     const dialogRef = this.dialog.open(ProjectOverviewComponent, {
-      position: {top: '50px', right: '200px'}
     });
 
     dialogRef.afterClosed().subscribe(result => {

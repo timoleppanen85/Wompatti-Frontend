@@ -18,10 +18,10 @@ export class QuestionsComponent implements OnInit {
   options: any;
   subject: any;
   image: any;
-  currentQuestion: any [];
-  currentOptions: any [];
-  selectedAnswers: any = [];
-  answers: any [];
+  currentQuestion: any[];
+  currentOptions: any[];
+  selectedAnswers: any[] = [];
+  answers: any[] = [];
 
   constructor(public dialog: MatDialog, private router: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -67,10 +67,12 @@ export class QuestionsComponent implements OnInit {
     console.log(data[this.selectedId].questions.length);
     this.questionIndex++;
     if (this.questionIndex >= data[this.selectedId].questions.length) {
-      return this.currentQuestion;
+      // return this.currentQuestion;
       this.router.navigate(['/result-data']);
     }
-    this.selectedAnswers.push(this.answers);
+    console.log(this.selectedAnswers);
+    console.log(this.answers);
+    this.answers.push(this.selectedAnswers);
     console.log(this.selectedAnswers);
   }
 

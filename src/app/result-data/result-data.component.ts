@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-data.component.css']
 })
 export class ResultDataComponent implements OnInit {
+  private answers: string;
+  item = JSON.parse(sessionStorage.getItem(this.answers));
 
   constructor() { }
 
   ngOnInit() {
-  }
 
+  }
 }

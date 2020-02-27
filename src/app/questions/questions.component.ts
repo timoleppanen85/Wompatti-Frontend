@@ -65,14 +65,17 @@ export class QuestionsComponent implements OnInit {
   nextQuestion() {
     console.log(this.questionIndex);
     console.log(data[this.selectedId].questions.length);
+    this.answers.push(this.selectedAnswers);
     this.questionIndex++;
     if (this.questionIndex >= data[this.selectedId].questions.length) {
       // return this.currentQuestion;
+      sessionStorage.setItem('answers', JSON.stringify(this.answers));
+      console.log(sessionStorage);
       this.router.navigate(['/result-data']);
     }
     console.log(this.selectedAnswers);
     console.log(this.answers);
-    this.answers.push(this.selectedAnswers);
+
     console.log(this.selectedAnswers);
   }
 

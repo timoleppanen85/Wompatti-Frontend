@@ -6,12 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-data.component.css']
 })
 export class ResultDataComponent implements OnInit {
-  private answers: string;
-  item = JSON.parse(sessionStorage.getItem(this.answers));
 
   constructor() { }
 
+  item = window.sessionStorage.getItem('questionAnswers');
+  test = JSON.parse(this.item)
+
   ngOnInit() {
+
+  document.getElementById('resultBox').innerHTML = this.test;
+
+  }
+
+  generatePdf() {
+
+    console.log(sessionStorage);
+  }
+
+  tulokset() {
 
   }
 }

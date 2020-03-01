@@ -69,7 +69,7 @@ export class QuestionsComponent implements OnInit {
     this.questionIndex++;
     if (this.questionIndex >= data[this.selectedId].questions.length) {
       // return this.currentQuestion;
-      sessionStorage.setItem('answers', JSON.stringify(this.answers));
+      sessionStorage.setItem('questionAnswers', JSON.stringify(this.answers));
       console.log(sessionStorage);
       this.router.navigate(['/result-data']);
     }

@@ -9,7 +9,7 @@
   <table>
 
     <!--  muuta hakemaan vastaukset välimuistista-->
-    <td id="picture" *ngFor="let question of item">
+    <td id="picture">
       <!-- <img id="answerImage" src="assets/images/wompattiEmpty.png" alt="Ei vastausta"/> -->
       <br>
       <button id="questionButton1" (click)="showQuestion()">1</button>
@@ -19,7 +19,7 @@
 </div>
 <div>
   <div id="printPdf">
-    <button id="pdfPrintButton" (click)="generatePdf()">Tulosta</button>
+    <button id="pdfPrintButton" (click)="tulokset()">Tulosta</button>
     <!--  tee pfd-sivun asettelu-->
   </div>
   <div id="savePdf">

@@ -1,14 +1,22 @@
 <body>
 <app-logo></app-logo>
 
-<div>
-  <p id="questionSetHeader">{{subject}}</p>
-</div>
+<div><p>&nbsp;</p><p>&nbsp;</p></div>
 
-<table>
-  <td id="picture"><img src="{{image}}" alt="question_image"></td>
-  <td id="question">{{showQuestion()}}</td>
-  <td id="answer">
+<mat-card class="matcard">
+  <mat-card-header>
+    <mat-card-title>{{subject}}</mat-card-title>
+    <div id="picture"><img src="{{image}}" alt="question_image"></div>
+  </mat-card-header>
+
+</mat-card>
+
+<mat-card class="matcard">
+  <div id="question">{{showQuestion()}}</div>
+</mat-card>
+
+<mat-card class="matcardQuestion">
+  <div id="answer">
     <mat-radio-group
       class="radio-group"
     [(ngModel)]="selectedAnswers">
@@ -19,11 +27,13 @@
         {{answer}}
       </mat-radio-button>
     </mat-radio-group>
-  </td>
-  <td id="empty"><label>
+  </div>
+</mat-card>
+<mat-card class="matcard">
+  <div id="empty"><label>
     <textarea placeholder="Kirjoita tähän lisätietoja"></textarea>
-  </label></td>
-</table>
+  </label></div>
+</mat-card>
 
 <div id="hintDiv">
   <button id="hint" (click)="openHint()">Ohje</button>

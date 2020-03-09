@@ -77,10 +77,12 @@ td {
 .radio-group {
   display: flex;
   flex-direction: column;
+  margin: 15px 0;
 }
 
 .radio-button {
-  margin: 5px;
+  margin: 15px;
+  color: black;
 }
 
 img {
@@ -89,6 +91,7 @@ img {
 }
 
 textarea {
+  margin: 15px;
   background: transparent;
   border: none;
   outline: none;
@@ -97,6 +100,20 @@ textarea {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.matcard {
+  max-width: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+}
+.matcardQuestion {
+  max-width: 80%;
+  background: lightgray;
+  border: none;
+  outline: none;
+  color: black;
+}
 
 
 

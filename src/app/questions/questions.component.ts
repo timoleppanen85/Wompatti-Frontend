@@ -72,9 +72,11 @@ export class QuestionsComponent implements OnInit {
   }
 
   radioChangeHandler(event: MatRadioChange, thisData) {
+    console.log(thisData);
     const object = this.showOptions().filter(x => x.options === thisData.options)[this.selectedAnswers];
     console.log(thisData);
     object.selected = event.value;
+    // console.log(event + 'xxx');
     if (!this.selectedAnswers.some(x => x.options === thisData.options)) {
       this.selectedAnswers.push(object);
     }

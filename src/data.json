@@ -2,7 +2,7 @@
   {
     "id": 1,
     "subject": "Aistit",
-    "img" : "assets/images/aistit.jpg",
+    "img" : "assets/images/aistit.svg",
     "questions": [
       {
         "question": "KUULO\n\nMillainen kuulo sinulla on?",
@@ -76,7 +76,7 @@
   {
     "id": 2,
     "subject": "Perhe ja läheiset",
-    "img" : "assets/images/perhe.png",
+    "img" : "assets/images/perhe.svg",
     "questions": [
       {
         "question": "Vastaa, jos sinulla on vanhemmat:\nMiten tulet toimeen\nvanhempiesi kanssa?",
@@ -139,7 +139,7 @@
   {
     "id": 3,
     "subject": "Asuminen ja ympäristö",
-    "img": "assets/images/koti.png",
+    "img": "assets/images/koti.svg",
     "questions": [
       {
         "question": "Oletko tyytyväinen kotiisi?",
@@ -173,7 +173,7 @@
   {
     "id": 4,
     "subject": "Liikkuminen ja vapaa-aika",
-    "img": "assets/images/vapaa-aika.png",
+    "img": "assets/images/vapaa-aika.svg",
     "questions": [
       {
         "question": "Pääsetkö liikkumaan kaikkiin\npaikkoihin minne haluat?",
@@ -204,7 +204,7 @@
   {
     "id": 5,
     "subject": "Raha",
-    "img": "assets/images/raha.png",
+    "img": "assets/images/raha.svg",
     "questions": [
       {
         "question": "Miten rahasi riittävät?",
@@ -227,7 +227,7 @@
   {
     "id": 6,
     "subject": "Elämäni tärkeät asiat",
-    "img": "assets/images/aika.png",
+    "img": "assets/images/aika.svg",
     "questions": [
       {
         "question": "Mitä ajattelet\ntulevaisuudestasi?",
@@ -258,7 +258,7 @@
   {
     "id": 7,
     "subject": "Huolet ja murheet",
-    "img": "assets/images/huolet ja murheet.png",
+    "img": "assets/images/huolet-ja-murheet.svg",
     "questions": [
       {
         "question": "Onko sinulla huolia\nja murheita?",
@@ -313,7 +313,7 @@
   {
     "id": 8,
     "subject": "Oma terveys",
-    "img": "assets/images/terveys.png",
+    "img": "assets/images/terveys.svg",
     "questions": [
       {
         "question": "Mitä ajattelet terveydestäsi?",
@@ -408,7 +408,7 @@
   {
     "id": 9,
     "subject": "Arjen askareet",
-    "img": "assets/images/arjen askareet.png",
+    "img": "assets/images/arjen-askareet.svg",
     "questions": [
       {
         "question": "Miten selviät kotitöistä?\n(siivous, tiskaus, pyykinpesu)",
@@ -442,7 +442,7 @@
   {
     "id": 10,
     "subject": "Työ",
-    "img": "assets/images/valita työ.png",
+    "img": "assets/images/valita-työ.svg",
     "questions": [
       {
         "question": "Mitä mieltä olet\ntyö-, työtoiminta- tai\npäivätoimintapaikastasi?",

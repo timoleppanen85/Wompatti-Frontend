@@ -9,12 +9,13 @@ export class ResultDataComponent implements OnInit {
 
   constructor() { }
 
-  item = window.sessionStorage.getItem('questionAnswers');
-  test = JSON.parse(this.item)
+  items = window.sessionStorage.getItem('questionAnswers');
+  test = JSON.parse(this.items)
 
   ngOnInit() {
 
   document.getElementById('resultBox').innerHTML = this.test;
+  // this.formatResult();
 
   }
 
@@ -23,7 +24,17 @@ export class ResultDataComponent implements OnInit {
     console.log(sessionStorage);
   }
 
+  formatResult() {
+    // tslint:disable-next-line:prefer-for-of
+    for (let i = 0; i < this.test.length; i++) {
+      document.getElementById('resultBox').innerHTML = this.test[i];
+    }
+  }
+
   tulokset() {
 
+  }
+
+  showQuestion() {
   }
 }

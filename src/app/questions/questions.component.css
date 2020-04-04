@@ -106,6 +106,7 @@ textarea {
   border: none;
   outline: none;
   color: black;
+  margin-top: 50px;
 }
 .matcardQuestion {
   max-width: 85%;
@@ -120,4 +121,8 @@ textarea {
   border: none;
   outline: none;
   color: black;
+}
+
+mat-card {
+  margin-left: 10px;
 }

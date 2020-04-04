@@ -9,27 +9,34 @@ export class ResultDataComponent implements OnInit {
 
   constructor() { }
 
-  items = window.sessionStorage.getItem('questionAnswers');
-  test = JSON.parse(this.items)
+  savedAnswers;
+  savedQuestions;
+  jsonAnswers = [];
+  jsonQuestions = [];
 
   ngOnInit() {
 
-  document.getElementById('resultBox').innerHTML = this.test;
+    this.savedAnswers = window.sessionStorage.getItem('questionAnswers');
+    this.jsonAnswers = JSON.parse(this.savedAnswers);
+    this.savedQuestions = window.sessionStorage.getItem('questionQuestions');
+    this.jsonQuestions = JSON.parse(this.savedQuestions);
+
   // this.formatResult();
 
   }
 
   generatePdf() {
-
+    console.log(this.jsonQuestions);
+    console.log(this.jsonAnswers)
     console.log(sessionStorage);
   }
 
-  formatResult() {
+  // formatResult() {
     // tslint:disable-next-line:prefer-for-of
-    for (let i = 0; i < this.test.length; i++) {
-      document.getElementById('resultBox').innerHTML = this.test[i];
-    }
-  }
+    // for (let i = 0; i < this.test.length; i++) {
+    //  document.getElementById('resultBox').innerHTML = this.test[i];
+ // }
+  // }
 
   tulokset() {
 

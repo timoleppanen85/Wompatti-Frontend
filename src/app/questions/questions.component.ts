@@ -22,6 +22,7 @@ export class QuestionsComponent implements OnInit {
   currentOptions: any[];
   selectedAnswers: any[] = [];
   answers: any[] = [];
+  saveQuestions: any[] = [];
 
   constructor(public dialog: MatDialog, private router: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -70,14 +71,11 @@ export class QuestionsComponent implements OnInit {
     if (this.questionIndex >= data[this.selectedId].questions.length) {
       // return this.currentQuestion;
       sessionStorage.setItem('questionAnswers', JSON.stringify(this.answers));
+      sessionStorage.setItem('questionQuestions', JSON.stringify(this.saveQuestions));
       console.log(sessionStorage);
       this.router.navigate(['/result-data']);
     }
-    console.log(this.selectedAnswers);
-    console.log(this.answers);
-
-    console.log(this.selectedAnswers);
-  }
+      }
 
   radioChangeHandler(event: MatRadioChange, thisData) {
     const object = this.showOptions().filter(x => x.options === thisData.options);

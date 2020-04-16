@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {any} from 'codelyzer/util/function';
+import {removeSummaryDuplicates} from "@angular/compiler";
 
 @Component({
   selector: 'app-result-data',
@@ -12,7 +14,8 @@ export class ResultDataComponent implements OnInit {
   savedAnswers;
   savedQuestions;
   jsonAnswers = [];
-  jsonQuestions = [];
+  jsonQuestions: any[];
+
 
   ngOnInit() {
 
@@ -27,8 +30,7 @@ export class ResultDataComponent implements OnInit {
 
   generatePdf() {
     console.log(this.jsonQuestions);
-    console.log(this.jsonAnswers)
-    console.log(sessionStorage);
+    console.log(this.jsonAnswers);
   }
 
   // formatResult() {
@@ -38,10 +40,8 @@ export class ResultDataComponent implements OnInit {
  // }
   // }
 
-  tulokset() {
+  showResult() {
 
   }
 
-  showQuestion() {
-  }
 }

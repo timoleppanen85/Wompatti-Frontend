@@ -16,14 +16,12 @@
   <!--  vastauspaketti-->
 
 
-  <table>
-
+  <table *ngFor="let question of jsonAnswers">
     <!--  muuta hakemaan vastaukset välimuistista-->
     <td id="picture">
       <!-- <img id="answerImage" src="assets/images/wompattiEmpty.png" alt="Ei vastausta"/> -->
-      <br>
-      <button id="questionButton1" (click)="showQuestion()">1</button>
-      <!--  muuta hakemaan kysymys nro automaagisesti-->
+      {{jsonAnswers[]}}
+
     </td>
   </table>
 </div>

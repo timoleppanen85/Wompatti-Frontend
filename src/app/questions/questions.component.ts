@@ -20,9 +20,14 @@ export class QuestionsComponent implements OnInit {
   image: any;
   currentQuestion: any[];
   currentOptions: any[];
+
   selectedAnswers: any[] = [];
   answers: any[] = [];
+
   saveQuestions: any[] = [];
+
+  otherAnswer;
+  savedOtherAnswers: any[] = [];
 
   constructor(public dialog: MatDialog, private router: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -63,19 +68,27 @@ export class QuestionsComponent implements OnInit {
     return this.currentOptions;
   }
 
+
   nextQuestion() {
     console.log(this.questionIndex);
     console.log(data[this.selectedId].questions.length);
+    this.otherAnswer = (document.getElementById('otherAnswerField') as HTMLInputElement).value;
     this.answers.push(this.selectedAnswers);
+    this.savedOtherAnswers.push(this.otherAnswer);
     this.questionIndex++;
+    sessionStorage.setItem('questionAnswers', JSON.stringify(this.answers));
+    this.selectedAnswers = null;
+    sessionStorage.setItem('questionQuestions', JSON.stringify(this.saveQuestions));
+    sessionStorage.setItem('otherAnswers', JSON.stringify(this.savedOtherAnswers));
+    (document.getElementById('otherAnswerField') as HTMLInputElement).value = '';
     if (this.questionIndex >= data[this.selectedId].questions.length) {
       // return this.currentQuestion;
-      sessionStorage.setItem('questionAnswers', JSON.stringify(this.answers));
-      sessionStorage.setItem('questionQuestions', JSON.stringify(this.saveQuestions));
-      console.log(sessionStorage);
+
+      console.log(this.savedOtherAnswers);
+
       this.router.navigate(['/result-data']);
     }
-      }
+  }
 
   radioChangeHandler(event: MatRadioChange, thisData) {
     const object = this.showOptions().filter(x => x.options === thisData.options);

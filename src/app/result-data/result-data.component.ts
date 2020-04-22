@@ -15,6 +15,8 @@ export class ResultDataComponent implements OnInit {
   savedQuestions;
   jsonAnswers = [];
   jsonQuestions: any[];
+  savedOther;
+  jsonOther = [];
 
 
   ngOnInit() {
@@ -23,6 +25,8 @@ export class ResultDataComponent implements OnInit {
     this.jsonAnswers = JSON.parse(this.savedAnswers);
     this.savedQuestions = window.sessionStorage.getItem('questionQuestions');
     this.jsonQuestions = JSON.parse(this.savedQuestions);
+    this.savedOther = window.sessionStorage.getItem('otherAnswers');
+    this.jsonOther = JSON.parse(this.savedOther);
 
   // this.formatResult();
 
@@ -31,6 +35,7 @@ export class ResultDataComponent implements OnInit {
   generatePdf() {
     console.log(this.jsonQuestions);
     console.log(this.jsonAnswers);
+    console.log(this.jsonOther);
   }
 
   // formatResult() {

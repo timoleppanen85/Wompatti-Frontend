@@ -6,16 +6,13 @@
       Sergio Palao / ARASAAC
     </td>
 
+
     <td>
       <button mat-button id="logOutButton" routerLink="/home">Etusivulle</button>
     </td>
 
     <td id="backToMenu" routerLink="/menu">
       <button mat-button *ngIf="router.url != '/menu'">Valikkoon</button>
-    </td>
-
-    <td>
-      <button mat-button (click)="results()">Tuloksiin</button>
     </td>
   </table>
 </div>

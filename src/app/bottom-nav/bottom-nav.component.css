@@ -17,11 +17,14 @@
 
 #backToMenu {
   pointer-events: none;
-  text-align: right;
+}
+
+#logOutButton {
+ text-align: right;
 }
 
 td {
-  width: 25%;
+  width: 25vw;
   height: 25px;
   vertical-align: middle;
 }
@@ -32,4 +35,5 @@ button {
   border-radius: 50px;
   color: #060E9F;
   pointer-events: auto;
+
 }

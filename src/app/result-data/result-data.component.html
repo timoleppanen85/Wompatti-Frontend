@@ -1,32 +1,40 @@
-
 <body>
-<div>
-  <ul>
-    <li *ngFor="let t of items">
-      {{ t }}
-    </li>
-  </ul>
-</div>
 <app-logo></app-logo>
 <div>
   <div id="resultHeader"></div>
 </div>
 
 <div id="resultBox">
-  <!--  vastauspaketti-->
-
-
-  <table *ngFor="let question of jsonAnswers">
+  <table>
+  <td>
+    <table id="questionTable">
+      <tr *ngFor="let thing of jsonQuestions">
+        {{ thing }}
+      </tr>
+      <div id="line"></div>
+    </table>
+  </td>
+  <td>
+  <table *ngFor="let question of jsonAnswers" id="answerTable">
     <!--  muuta hakemaan vastaukset välimuistista-->
-    <td id="picture">
+    <tr  id="picture">
       <!-- <img id="answerImage" src="assets/images/wompattiEmpty.png" alt="Ei vastausta"/> -->
-      {{ question }} {{ jsonOther }}
-    </td>
+      {{ question }}
+    </tr>
+  </table>
+  </td>
+  <td>
+  <table id="otherAnswerTable">
+    <tr *ngFor="let otheranswer of jsonOther">
+      {{ otheranswer }}
+  </table>
+  </td>
   </table>
 </div>
+
 <div>
   <div id="printPdf">
-    <button id="pdfPrintButton" (click)="tulokset()">Tulosta</button>
+    <button id="pdfPrintButton">Tulosta</button>
     <!--  tee pfd-sivun asettelu-->
   </div>
   <div id="savePdf">

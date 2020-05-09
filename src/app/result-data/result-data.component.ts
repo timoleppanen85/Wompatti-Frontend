@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {any} from 'codelyzer/util/function';
-import {removeSummaryDuplicates} from "@angular/compiler";
+import {removeSummaryDuplicates} from '@angular/compiler';
 
 @Component({
   selector: 'app-result-data',
@@ -13,10 +13,11 @@ export class ResultDataComponent implements OnInit {
 
   savedAnswers;
   savedQuestions;
-  jsonAnswers = [];
-  jsonQuestions: any[];
   savedOther;
+  jsonAnswers = [];
+  jsonQuestions = [];
   jsonOther = [];
+  combined = [];
 
 
   ngOnInit() {
@@ -27,26 +28,26 @@ export class ResultDataComponent implements OnInit {
     this.jsonQuestions = JSON.parse(this.savedQuestions);
     this.savedOther = window.sessionStorage.getItem('otherAnswers');
     this.jsonOther = JSON.parse(this.savedOther);
+    this.combined.push(this.jsonOther, this.jsonAnswers, this.jsonQuestions);
 
   // this.formatResult();
 
   }
 
   generatePdf() {
-    console.log(this.jsonQuestions);
-    console.log(this.jsonAnswers);
-    console.log(this.jsonOther);
-  }
+    const mywindow = window.open('', 'PRINT', 'height=400,width=600');
 
-  // formatResult() {
-    // tslint:disable-next-line:prefer-for-of
-    // for (let i = 0; i < this.test.length; i++) {
-    //  document.getElementById('resultBox').innerHTML = this.test[i];
- // }
-  // }
+    mywindow.document.write('<html><head><title>' + document.title  + '</title>');
+    mywindow.document.write('</head><body >');
+    mywindow.document.write('<h1>' + document.title  + '</h1>');
+    mywindow.document.write(document.getElementById('resultBox').innerHTML);
+    mywindow.document.write('</body></html>');
 
-  showResult() {
+    mywindow.focus(); // necessary for IE >= 10*/
 
+    mywindow.print();
+
+    return true;
   }
 
 }

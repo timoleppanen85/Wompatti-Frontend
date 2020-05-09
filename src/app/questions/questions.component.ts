@@ -24,7 +24,8 @@ export class QuestionsComponent implements OnInit {
   selectedAnswers: any[] = [];
   answers: any[] = [];
 
-  saveQuestions: any[] = [];
+  questions: any[] = [];
+  savedQuestions: any[] = [];
 
   otherAnswer;
   savedOtherAnswers: any[] = [];
@@ -73,12 +74,21 @@ export class QuestionsComponent implements OnInit {
     console.log(this.questionIndex);
     console.log(data[this.selectedId].questions.length);
     this.otherAnswer = (document.getElementById('otherAnswerField') as HTMLInputElement).value;
+
+    this.questions = this.currentQuestion;
+    this.savedQuestions.push(this.questions);
+    sessionStorage.setItem('questionQuestions', JSON.stringify(this.savedQuestions));
+    console.log(this.savedQuestions);
+
     this.answers.push(this.selectedAnswers);
+
     this.savedOtherAnswers.push(this.otherAnswer);
+
     this.questionIndex++;
     sessionStorage.setItem('questionAnswers', JSON.stringify(this.answers));
     this.selectedAnswers = null;
-    sessionStorage.setItem('questionQuestions', JSON.stringify(this.saveQuestions));
+
+
     sessionStorage.setItem('otherAnswers', JSON.stringify(this.savedOtherAnswers));
     (document.getElementById('otherAnswerField') as HTMLInputElement).value = '';
     if (this.questionIndex >= data[this.selectedId].questions.length) {

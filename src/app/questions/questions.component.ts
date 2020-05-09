@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialog, MatRadioChange} from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
+
 // @ts-ignore
 import data from '../../data.json';
 import {ActivatedRoute, Router} from '@angular/router';
@@ -20,7 +21,15 @@ export class QuestionsComponent implements OnInit {
   image: any;
   currentQuestion: any[];
   currentOptions: any[];
-  selectedAnswers: any = [];
+
+  selectedAnswers: any[] = [];
+  answers: any[] = [];
+
+  questions: any[] = [];
+  savedQuestions: any[] = [];
+
+  otherAnswer;
+  savedOtherAnswers: any[] = [];
 
   constructor(public dialog: MatDialog, private router: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -61,22 +70,38 @@ export class QuestionsComponent implements OnInit {
     return this.currentOptions;
   }
 
+
   nextQuestion() {
     console.log(this.questionIndex);
     console.log(data[this.selectedId].questions.length);
+    this.otherAnswer = (document.getElementById('otherAnswerField') as HTMLInputElement).value;
+
+    this.questions = this.currentQuestion;
+    this.savedQuestions.push(this.questions);
+    sessionStorage.setItem('questionQuestions', JSON.stringify(this.savedQuestions));
+    console.log(this.savedQuestions);
+
+    this.answers.push(this.selectedAnswers);
+
+    this.savedOtherAnswers.push(this.otherAnswer);
+
     this.questionIndex++;
+    sessionStorage.setItem('questionAnswers', JSON.stringify(this.answers));
+    this.selectedAnswers = null;
+
+
+    sessionStorage.setItem('otherAnswers', JSON.stringify(this.savedOtherAnswers));
+    (document.getElementById('otherAnswerField') as HTMLInputElement).value = '';
     if (this.questionIndex >= data[this.selectedId].questions.length) {
+      // return this.currentQuestion;
+
+      console.log(this.savedOtherAnswers);
+
       this.router.navigate(['/result-data']);
     }
-    return this.currentQuestion;
   }
 
   radioChangeHandler(event: MatRadioChange, thisData) {
-    const object = this.showOptions().filter(x => x.options === thisData.options)[this.selectedAnswers];
-    console.log(thisData);
-    object.selected = event.value;
-    if (!this.selectedAnswers.some(x => x.options === thisData.options)) {
-      this.selectedAnswers.push(object);
-    }
+    const object = this.showOptions().filter(x => x.options === thisData.options);
   }
 }

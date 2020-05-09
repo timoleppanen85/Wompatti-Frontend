@@ -1,6 +1,6 @@
 #bottomNavBox {
   width: 100%;
-  height: 100px;
+  height: 85px;
   background-color: #00A887;
   position:absolute;
   bottom:0;
@@ -12,17 +12,20 @@
 
 #navItemTable {
   width: 100%;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 #backToMenu {
   pointer-events: none;
-  text-align: right;
+}
+
+#logOutButton {
+ text-align: right;
 }
 
 td {
-  width: 25%;
-  height: 50px;
+  width: 25vw;
+  height: 25px;
   vertical-align: middle;
 }
 
@@ -32,4 +35,5 @@ button {
   border-radius: 50px;
   color: #060E9F;
   pointer-events: auto;
+
 }

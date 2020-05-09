@@ -1,3 +1,40 @@
-<p>
-  result-data works!
-</p>
+<body>
+<app-logo></app-logo>
+<div>
+  <div id="resultHeader"></div>
+</div>
+
+<div id="resultBox">
+  <table>
+  <td>
+    <table id="questionTable">
+      <tr *ngFor="let thing of jsonQuestions">
+        {{ thing }}
+      </tr>
+    </table>
+  </td>
+  <td>
+  <table *ngFor="let question of jsonAnswers" id="answerTable">
+    <!--  muuta hakemaan vastaukset välimuistista-->
+    <tr  id="picture">
+      <!-- <img id="answerImage" src="assets/images/wompattiEmpty.png" alt="Ei vastausta"/> -->
+      {{ question }}
+    </tr>
+  </table>
+  </td>
+  <td>
+  <table id="otherAnswerTable">
+    <tr *ngFor="let otheranswer of jsonOther">
+      {{ otheranswer }}
+  </table>
+  </td>
+  </table>
+</div>
+
+<div>
+  <div id="printPdf">
+    <button id="pdfPrintButton" (click)="generatePdf()">Tallenna/Tulosta</button>
+    <!--  tee pfd-sivun asettelu-->
+  </div>
+</div>
+<app-bottom-nav></app-bottom-nav>

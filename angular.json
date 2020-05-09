@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Projekti2-Frontend": {
+    "Wompatti": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Projekti2-Frontend",
+            "outputPath": "dist/Wompatti",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Projekti2-Frontend:build"
+            "browserTarget": "Wompatti:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Projekti2-Frontend:build:production"
+              "browserTarget": "Wompatti:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Projekti2-Frontend:build"
+            "browserTarget": "Wompatti:build"
           }
         },
         "test": {
@@ -105,7 +105,7 @@
         }
       }
     },
-    "Projekti2-Frontend-e2e": {
+    "Wompatti-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Projekti2-Frontend:serve"
+            "devServerTarget": "Wompatti:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Projekti2-Frontend:serve:production"
+              "devServerTarget": "Wompatti:serve:production"
             }
           }
         },
@@ -134,5 +134,5 @@
       }
     }
   },
-  "defaultProject": "Projekti2-Frontend"
+  "defaultProject": "Wompatti"
 }

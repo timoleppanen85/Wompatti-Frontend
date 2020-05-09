@@ -6,13 +6,13 @@ import {HomeComponent} from './home/home.component';
 import {ResultDataComponent} from './result-data/result-data.component';
 import {QuestionsComponent} from './questions/questions.component';
 import {
-  MatButtonModule,
-  MatDialogModule,
-  MatFormFieldModule,
-  MatIconModule,
-  MatListModule,
-  MatMenuModule,
-  MatProgressBarModule
+    MatButtonModule, MatCardModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule,
+    MatProgressBarModule
 } from '@angular/material';
 import {AppRoutingModule, routingComponents} from './app-routing-module';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
@@ -38,22 +38,23 @@ import {FormsModule} from '@angular/forms';
     BottomNavComponent,
     LogoComponent,
     HintDialogComponent,
-    ProjectOverviewComponent,
+    ProjectOverviewComponent
   ],
-  imports: [
-    BrowserModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatProgressBarModule,
-    MatDialogModule,
-    MatRadioModule,
-    FormsModule,
-    MatListModule
-  ],
+    imports: [
+        BrowserModule,
+        MatMenuModule,
+        MatIconModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatProgressBarModule,
+        MatDialogModule,
+        MatRadioModule,
+        FormsModule,
+        MatListModule,
+        MatCardModule
+    ],
   entryComponents: [
     HintDialogComponent,
     ProjectOverviewComponent

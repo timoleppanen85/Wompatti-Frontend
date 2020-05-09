@@ -38,7 +38,7 @@ import {FormsModule} from '@angular/forms';
     BottomNavComponent,
     LogoComponent,
     HintDialogComponent,
-    ProjectOverviewComponent,
+    ProjectOverviewComponent
   ],
     imports: [
         BrowserModule,

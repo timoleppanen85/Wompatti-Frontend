@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {any} from 'codelyzer/util/function';
-import {removeSummaryDuplicates} from '@angular/compiler';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-result-data',
@@ -9,7 +8,7 @@ import {removeSummaryDuplicates} from '@angular/compiler';
 })
 export class ResultDataComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   savedAnswers;
   savedQuestions;
@@ -35,19 +34,6 @@ export class ResultDataComponent implements OnInit {
   }
 
   generatePdf() {
-    const mywindow = window.open('', 'PRINT', 'height=400,width=600');
-
-    mywindow.document.write('<html><head><title>' + document.title  + '</title>');
-    mywindow.document.write('</head><body >');
-    mywindow.document.write('<h1>' + document.title  + '</h1>');
-    mywindow.document.write(document.getElementById('resultBox').innerHTML);
-    mywindow.document.write('</body></html>');
-
-    mywindow.focus(); // necessary for IE >= 10*/
-
-    mywindow.print();
-
-    return true;
+    window.print();
   }
-
 }

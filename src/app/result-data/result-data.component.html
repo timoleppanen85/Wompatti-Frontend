@@ -11,7 +11,6 @@
       <tr *ngFor="let thing of jsonQuestions">
         {{ thing }}
       </tr>
-      <div id="line"></div>
     </table>
   </td>
   <td>
@@ -34,11 +33,7 @@
 
 <div>
   <div id="printPdf">
-    <button id="pdfPrintButton">Tulosta</button>
-    <!--  tee pfd-sivun asettelu-->
-  </div>
-  <div id="savePdf">
-    <button id="pdfSaveButton" (click)="generatePdf()">Tallenna</button>
+    <button id="pdfPrintButton" (click)="generatePdf()">Tallenna/Tulosta</button>
     <!--  tee pfd-sivun asettelu-->
   </div>
 </div>

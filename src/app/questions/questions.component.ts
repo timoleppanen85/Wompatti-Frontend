@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialog, MatRadioChange} from '@angular/material';
 import {HintDialogComponent} from '../hint-dialog/hint-dialog.component';
+
 // @ts-ignore
 import data from '../../data.json';
 import {ActivatedRoute, Router} from '@angular/router';
